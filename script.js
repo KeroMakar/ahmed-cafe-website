@@ -132,7 +132,7 @@
 
     const frameCount = 80;
     const currentFrame = index => (
-      `images/hero-sequence/Smoothly_transition_between_1080p_20260222192_${index.toString().padStart(3, '0')}.jpg`
+      `assets/images/hero-sequence/Smoothly_transition_between_1080p_20260222192_${index.toString().padStart(3, '0')}.jpg`
     );
 
     const images = [];
@@ -211,7 +211,7 @@
   }
 
   /* ---------- BACKGROUND MUSIC ---------- */
-  const audio = new Audio('project/public/soundsvisual-sea-gently-lapping-waves-far-away-seagulls-486892.mp3');
+  const audio = new Audio('assets/audio/waves.mp3');
   audio.loop = true;
   audio.volume = 0.2; // Calm and relaxing volume (Note: iOS overrides this script volume)
 

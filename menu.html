@@ -13,15 +13,16 @@
     href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&family=Dancing+Script:wght@700&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="assets/css/scroll-stack-menu.css" />
 </head>
 
 <body>
 
-  <!-- ===================== NAVBAR ===================== -->
+  <!-- NAVBAR -->
   <header class="navbar" id="navbar">
     <div class="nav-container">
       <a href="index.html" class="nav-logo">
-        <img src="new logo.png" alt="La Palma Café Logo" class="logo-img" />
+        <img src="assets/images/logo.png" alt="La Palma Café Logo" class="logo-img" />
       </a>
       <nav class="nav-links" id="navLinks">
         <a href="index.html#hero" class="nav-link" data-section="hero">Home</a>
@@ -34,11 +35,10 @@
     </div>
   </header>
 
-
   <div style="height: 100px; background: var(--cream);"></div>
-  <!-- ===================== MENU SECTION ===================== -->
+
+  <!-- MENU SECTION -->
   <section class="menu-section" id="menu">
-    <!-- Greek meander border top -->
     <div class="meander-border top-meander"></div>
 
     <div class="container">
@@ -54,806 +54,1040 @@
           </svg>
         </div>
       </div>
-
-      <!-- Circular Gallery Container -->
-      <div id="circular-gallery-container"
-        style="width: 100%; height: 60vh; max-height: 800px; position: relative; cursor: grab; overflow: hidden; margin-bottom: 30px;">
-      </div>
-
-      <!-- Categories Detailed Grid -->
-
-      <div class="category-heading">Hot Drinks <span dir="rtl" lang="ar">مشروبات ساخنة</span></div>
-      <div class="menu-grid">
-        <div class="menu-item">
-          <div class="item-emoji">☕</div>
-          <div class="item-info">
-            <h3 class="item-name">Espresso <span dir="rtl" lang="ar">اسبريسو</span></h3>
-          </div>
-          <div class="item-price">40 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item">
-          <div class="item-emoji">☕</div>
-          <div class="item-info">
-            <h3 class="item-name">Double Espresso <span dir="rtl" lang="ar">اسبريسو دبل</span></h3>
-          </div>
-          <div class="item-price">50 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item">
-          <div class="item-emoji">☕</div>
-          <div class="item-info">
-            <h3 class="item-name">Macchiato <span dir="rtl" lang="ar">مكياتو</span></h3>
-          </div>
-          <div class="item-price">45 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item">
-          <div class="item-emoji">☕</div>
-          <div class="item-info">
-            <h3 class="item-name">Macchiato Double <span dir="rtl" lang="ar">مكياتو دبل</span></h3>
-          </div>
-          <div class="item-price">55 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item">
-          <div class="item-emoji">🍫</div>
-          <div class="item-info">
-            <h3 class="item-name">Espresso Nutella <span dir="rtl" lang="ar">اسبريسو نوتيلا</span></h3>
-          </div>
-          <div class="item-price">45 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item">
-          <div class="item-emoji">☕</div>
-          <div class="item-info">
-            <h3 class="item-name">Cappuccino <span dir="rtl" lang="ar">كابتشينو</span></h3>
-          </div>
-          <div class="item-price">60 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item">
-          <div class="item-emoji">☕</div>
-          <div class="item-info">
-            <h3 class="item-name">Mocha <span dir="rtl" lang="ar">موكا</span></h3>
-          </div>
-          <div class="item-price">65 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item">
-          <div class="item-emoji">☕</div>
-          <div class="item-info">
-            <h3 class="item-name">Latte <span dir="rtl" lang="ar">لاتيه</span></h3>
-          </div>
-          <div class="item-price">60 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item">
-          <div class="item-emoji">☕</div>
-          <div class="item-info">
-            <h3 class="item-name">Nescafe <span dir="rtl" lang="ar">نسكافية</span></h3>
-          </div>
-          <div class="item-price">50 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item">
-          <div class="item-emoji">☕</div>
-          <div class="item-info">
-            <h3 class="item-name">Flat White <span dir="rtl" lang="ar">فلات وايت</span></h3>
-          </div>
-          <div class="item-price">65 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item">
-          <div class="item-emoji">☕</div>
-          <div class="item-info">
-            <h3 class="item-name">American Coffee <span dir="rtl" lang="ar">اميركان كوفي</span></h3>
-          </div>
-          <div class="item-price">50 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item">
-          <div class="item-emoji">☕</div>
-          <div class="item-info">
-            <h3 class="item-name">Turkish Coffee <span dir="rtl" lang="ar">قهوة تركى</span></h3>
-          </div>
-          <div class="item-price">30 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item">
-          <div class="item-emoji">☕</div>
-          <div class="item-info">
-            <h3 class="item-name">Turkish Coffee Double <span dir="rtl" lang="ar">قهوة دبل</span></h3>
-          </div>
-          <div class="item-price">40 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item">
-          <div class="item-emoji">☕</div>
-          <div class="item-info">
-            <h3 class="item-name">French Coffee <span dir="rtl" lang="ar">قهوة فرنساوى</span></h3>
-          </div>
-          <div class="item-price">50 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item">
-          <div class="item-emoji">🌰</div>
-          <div class="item-info">
-            <h3 class="item-name">Hazelnut Coffee <span dir="rtl" lang="ar">قهوة بندق</span></h3>
-          </div>
-          <div class="item-price">50 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item">
-          <div class="item-emoji">🍫</div>
-          <div class="item-info">
-            <h3 class="item-name">Nutella Coffee <span dir="rtl" lang="ar">قهوة نوتيلا</span></h3>
-          </div>
-          <div class="item-price">50 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item">
-          <div class="item-emoji">🍫</div>
-          <div class="item-info">
-            <h3 class="item-name">Hot Chocolate <span dir="rtl" lang="ar">هوت تشوكليت</span></h3>
-          </div>
-          <div class="item-price">60 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item">
-          <div class="item-emoji">🍎</div>
-          <div class="item-info">
-            <h3 class="item-name">Hot Cider <span dir="rtl" lang="ar">هوت سيدر</span></h3>
-          </div>
-          <div class="item-price">50 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item">
-          <div class="item-emoji">🫖</div>
-          <div class="item-info">
-            <h3 class="item-name">Tea <span dir="rtl" lang="ar">شاى</span></h3>
-          </div>
-          <div class="item-price">25 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item">
-          <div class="item-emoji">🌿</div>
-          <div class="item-info">
-            <h3 class="item-name">Herbs <span dir="rtl" lang="ar">اعشاب</span></h3>
-          </div>
-          <div class="item-price">35 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item">
-          <div class="item-emoji">🍋</div>
-          <div class="item-info">
-            <h3 class="item-name">Vitamin C <span dir="rtl" lang="ar">فيتامين سي</span></h3>
-          </div>
-          <div class="item-price">45 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item">
-          <div class="item-emoji">🫖</div>
-          <div class="item-info">
-            <h3 class="item-name">Ahmed Tea <span dir="rtl" lang="ar">شاى احمد</span></h3>
-          </div>
-          <div class="item-price">35 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item">
-          <div class="item-emoji">🫖</div>
-          <div class="item-info">
-            <h3 class="item-name">Helba <span dir="rtl" lang="ar">حلبة</span></h3>
-          </div>
-          <div class="item-price">30 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item">
-          <div class="item-emoji">☕</div>
-          <div class="item-info">
-            <h3 class="item-name">Coffee Mix <span dir="rtl" lang="ar">كوفي ميكس</span></h3>
-          </div>
-          <div class="item-price">40 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item">
-          <div class="item-emoji">🥛</div>
-          <div class="item-info">
-            <h3 class="item-name">Sahlab with Nuts <span dir="rtl" lang="ar">سحلب مكسرات</span></h3>
-          </div>
-          <div class="item-price">65 <span class="currency">EGP</span></div>
-        </div>
-      </div>
-
-      <div class="category-heading">Cold Drinks <span dir="rtl" lang="ar">مشروبات بارده</span></div>
-      <div class="menu-grid">
-        <div class="menu-item">
-          <div class="item-emoji">🧊</div>
-          <div class="item-info">
-            <h3 class="item-name">Frappuccino <span dir="rtl" lang="ar">فرابتشينو</span></h3>
-          </div>
-          <div class="item-price">65 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item">
-          <div class="item-emoji">🧊</div>
-          <div class="item-info">
-            <h3 class="item-name">Iced Latte <span dir="rtl" lang="ar">ايس لاتيه</span></h3>
-          </div>
-          <div class="item-price">70 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item">
-          <div class="item-emoji">🧊</div>
-          <div class="item-info">
-            <h3 class="item-name">Iced Mocha <span dir="rtl" lang="ar">ايس موكا</span></h3>
-          </div>
-          <div class="item-price">75 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item">
-          <div class="item-emoji">🧊</div>
-          <div class="item-info">
-            <h3 class="item-name">Iced White Mocha <span dir="rtl" lang="ar">ايس وايت موكا</span></h3>
-          </div>
-          <div class="item-price">75 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item">
-          <div class="item-emoji">🧊</div>
-          <div class="item-info">
-            <h3 class="item-name">Iced Coffee <span dir="rtl" lang="ar">ايس كوفي</span></h3>
-          </div>
-          <div class="item-price">65 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item">
-          <div class="item-emoji">🧊</div>
-          <div class="item-info">
-            <h3 class="item-name">Iced Chocolate <span dir="rtl" lang="ar">ايس تشوكليت</span></h3>
-          </div>
-          <div class="item-price">70 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item">
-          <div class="item-emoji">🧊</div>
-          <div class="item-info">
-            <h3 class="item-name">Iced Spanish Latte <span dir="rtl" lang="ar">ايس سبانيش لاتيه</span></h3>
-          </div>
-          <div class="item-price">75 <span class="currency">EGP</span></div>
-        </div>
-      </div>
-
-      <div class="category-heading">Milkshake <span dir="rtl" lang="ar">ميلك شيك</span></div>
-      <div class="menu-grid">
-        <div class="menu-item">
-          <div class="item-emoji">🥛</div>
-          <div class="item-info">
-            <h3 class="item-name">Milkshake <span dir="rtl" lang="ar">ميلك شيك</span></h3>
-            <p class="item-desc">Mango - Vanilla - Strawberry - Chocolate - Caramel - Blueberry<br><span dir="rtl"
-                lang="ar">مانجو - فانيليا - فراولة - شيكولاتة - كراميل - بلوبيرى</span></p>
-          </div>
-          <div class="item-price">75 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item">
-          <div class="item-emoji">🍫</div>
-          <div class="item-info">
-            <h3 class="item-name">Nutella Milkshake <span dir="rtl" lang="ar">ميلك شيك نوتيلا</span></h3>
-          </div>
-          <div class="item-price">80 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item">
-          <div class="item-emoji">🍪</div>
-          <div class="item-info">
-            <h3 class="item-name">Oreo Milkshake <span dir="rtl" lang="ar">ميلك شيك اوريو</span></h3>
-          </div>
-          <div class="item-price">80 <span class="currency">EGP</span></div>
-        </div>
-      </div>
-
-      <div class="category-heading">Ice Cream <span dir="rtl" lang="ar">ايس كريم</span></div>
-      <div class="menu-grid">
-        <div class="menu-item">
-          <div class="item-emoji">🍨</div>
-          <div class="item-info">
-            <h3 class="item-name">Classic Ice Cream <span dir="rtl" lang="ar">ايس كريم كلاسيك</span></h3>
-            <p class="item-desc">3 Bowls of your choice<br><span dir="rtl" lang="ar">ثلاثة بولة من اختيارك</span></p>
-          </div>
-          <div class="item-price">60 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item">
-          <div class="item-emoji">🍧</div>
-          <div class="item-info">
-            <h3 class="item-name">La Palma Ice Cream <span dir="rtl" lang="ar">ايس كريم لابالما</span></h3>
-            <p class="item-desc">3 Bowls of your choice with nuts and fruits<br><span dir="rtl" lang="ar">ثلاثة بولة من
-                اختيارك مع مكسرات و فاكهة</span></p>
-          </div>
-          <div class="item-price">75 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item">
-          <div class="item-emoji">🍌</div>
-          <div class="item-info">
-            <h3 class="item-name">Banana Split Ice Cream <span dir="rtl" lang="ar">بانانا سبليت ايس كريم</span></h3>
-            <p class="item-desc">2 Bowls of your choice + 2 bananas<br><span dir="rtl" lang="ar">بولتين من اختيارك مع
-                اتنين موزة</span></p>
-          </div>
-          <div class="item-price">85 <span class="currency">EGP</span></div>
-        </div>
-      </div>
-
-      <div class="category-heading">Soft Drinks <span dir="rtl" lang="ar">مشروبات غازية</span></div>
-      <div class="menu-grid">
-        <div class="menu-item">
-          <div class="item-emoji">🧊</div>
-          <div class="item-info">
-            <h3 class="item-name">Mineral Water <span dir="rtl" lang="ar">مياه معدنية</span></h3>
-          </div>
-          <div class="item-price">10 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item">
-          <div class="item-emoji">🥤</div>
-          <div class="item-info">
-            <h3 class="item-name">Cans <span dir="rtl" lang="ar">كانز</span></h3>
-          </div>
-          <div class="item-price">45 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item">
-          <div class="item-emoji">🍋</div>
-          <div class="item-info">
-            <h3 class="item-name">Fayrouz or Schweppes <span dir="rtl" lang="ar">فيروز او شويبس</span></h3>
-          </div>
-          <div class="item-price">50 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item">
-          <div class="item-emoji">🔋</div>
-          <div class="item-info">
-            <h3 class="item-name">Red Bull <span dir="rtl" lang="ar">ريد بل</span></h3>
-          </div>
-          <div class="item-price">85 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item">
-          <div class="item-emoji">⚡</div>
-          <div class="item-info">
-            <h3 class="item-name">Sting <span dir="rtl" lang="ar">ستينج</span></h3>
-          </div>
-          <div class="item-price">40 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item">
-          <div class="item-emoji">🍺</div>
-          <div class="item-info">
-            <h3 class="item-name">Beirel <span dir="rtl" lang="ar">بيريل</span></h3>
-          </div>
-          <div class="item-price">50 <span class="currency">EGP</span></div>
-        </div>
-      </div>
-
-      <div class="category-heading">Fresh Juice <span dir="rtl" lang="ar">عصائر فريش</span></div>
-      <div class="menu-grid">
-        <div class="menu-item">
-          <div class="item-emoji">🥭</div>
-          <div class="item-info">
-            <h3 class="item-name">Mango <span dir="rtl" lang="ar">مانجو</span></h3>
-          </div>
-          <div class="item-price">70 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item">
-          <div class="item-emoji">🍓</div>
-          <div class="item-info">
-            <h3 class="item-name">Strawberry <span dir="rtl" lang="ar">فراولة</span></h3>
-          </div>
-          <div class="item-price">65 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item">
-          <div class="item-emoji">🍐</div>
-          <div class="item-info">
-            <h3 class="item-name">Guava <span dir="rtl" lang="ar">جوافة</span></h3>
-          </div>
-          <div class="item-price">65 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item">
-          <div class="item-emoji">🍌</div>
-          <div class="item-info">
-            <h3 class="item-name">Banana <span dir="rtl" lang="ar">موز</span></h3>
-          </div>
-          <div class="item-price">65 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item">
-          <div class="item-emoji">🍉</div>
-          <div class="item-info">
-            <h3 class="item-name">Watermelon <span dir="rtl" lang="ar">بطيخ</span></h3>
-          </div>
-          <div class="item-price">65 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item">
-          <div class="item-emoji">🔴</div>
-          <div class="item-info">
-            <h3 class="item-name">Pomegranate <span dir="rtl" lang="ar">رمان</span></h3>
-          </div>
-          <div class="item-price">65 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item">
-          <div class="item-emoji">🟤</div>
-          <div class="item-info">
-            <h3 class="item-name">Dates <span dir="rtl" lang="ar">بلح</span></h3>
-          </div>
-          <div class="item-price">65 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item">
-          <div class="item-emoji">🍋</div>
-          <div class="item-info">
-            <h3 class="item-name">Lemon <span dir="rtl" lang="ar">ليمون</span></h3>
-          </div>
-          <div class="item-price">50 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item">
-          <div class="item-emoji">🌿</div>
-          <div class="item-info">
-            <h3 class="item-name">Lemon Mint <span dir="rtl" lang="ar">ليمون نعناع</span></h3>
-          </div>
-          <div class="item-price">55 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item">
-          <div class="item-emoji">🍊</div>
-          <div class="item-info">
-            <h3 class="item-name">Orange <span dir="rtl" lang="ar">برتقال</span></h3>
-          </div>
-          <div class="item-price">60 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item">
-          <div class="item-emoji">🍑</div>
-          <div class="item-info">
-            <h3 class="item-name">Peach <span dir="rtl" lang="ar">خوخ</span></h3>
-          </div>
-          <div class="item-price">65 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item">
-          <div class="item-emoji">🍇</div>
-          <div class="item-info">
-            <h3 class="item-name">Grape <span dir="rtl" lang="ar">عنب</span></h3>
-          </div>
-          <div class="item-price">65 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item">
-          <div class="item-emoji">🍍</div>
-          <div class="item-info">
-            <h3 class="item-name">Pineapple <span dir="rtl" lang="ar">اناناس</span></h3>
-          </div>
-          <div class="item-price">65 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item">
-          <div class="item-emoji">🥝</div>
-          <div class="item-info">
-            <h3 class="item-name">Kiwi <span dir="rtl" lang="ar">كيوي</span></h3>
-          </div>
-          <div class="item-price">70 <span class="currency">EGP</span></div>
-        </div>
-      </div>
-
-      <div class="category-heading">Cocktails <span dir="rtl" lang="ar">كوكتيل</span></div>
-      <div class="menu-grid">
-        <div class="menu-item">
-          <div class="item-emoji">🍹</div>
-          <div class="item-info">
-            <h3 class="item-name">Cocktail <span dir="rtl" lang="ar">كوكتيل</span></h3>
-            <p class="item-desc">Banana - dates - honey - milk - nuts<br><span dir="rtl" lang="ar">موز - بلح - عسل - لبن
-                - مكسرات</span></p>
-          </div>
-          <div class="item-price">75 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item">
-          <div class="item-emoji">🌿</div>
-          <div class="item-info">
-            <h3 class="item-name">Mojito <span dir="rtl" lang="ar">موهيتو</span></h3>
-          </div>
-          <div class="item-price">65 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item">
-          <div class="item-emoji">🥭</div>
-          <div class="item-info">
-            <h3 class="item-name">Manganito <span dir="rtl" lang="ar">مانجانيتو</span></h3>
-            <p class="item-desc">Mango - strawberry - ice cream<br><span dir="rtl" lang="ar">مانجو - فراولة - ايس
-                كريم</span></p>
-          </div>
-          <div class="item-price">75 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item">
-          <div class="item-emoji">🥝</div>
-          <div class="item-info">
-            <h3 class="item-name">Kiwana <span dir="rtl" lang="ar">كيوانا</span></h3>
-            <p class="item-desc">Kiwi - peach<br><span dir="rtl" lang="ar">كيوى - خوخ</span></p>
-          </div>
-          <div class="item-price">75 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item">
-          <div class="item-emoji">🍐</div>
-          <div class="item-info">
-            <h3 class="item-name">Green Heaven <span dir="rtl" lang="ar">جرين هيفن</span></h3>
-            <p class="item-desc">Guava - mint<br><span dir="rtl" lang="ar">جوافة - نعناع</span></p>
-          </div>
-          <div class="item-price">70 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item">
-          <div class="item-emoji">🌊</div>
-          <div class="item-info">
-            <h3 class="item-name">Blue Sea <span dir="rtl" lang="ar">بلو سي</span></h3>
-          </div>
-          <div class="item-price">65 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item">
-          <div class="item-emoji">🍓</div>
-          <div class="item-info">
-            <h3 class="item-name">Farawlety <span dir="rtl" lang="ar">فراولتي</span></h3>
-            <p class="item-desc">Strawberry - banana<br><span dir="rtl" lang="ar">فراولة - موز</span></p>
-          </div>
-          <div class="item-price">70 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item">
-          <div class="item-emoji">🍍</div>
-          <div class="item-info">
-            <h3 class="item-name">Ananaso <span dir="rtl" lang="ar">اناناسو</span></h3>
-            <p class="item-desc">Pineapple - kiwi - milk<br><span dir="rtl" lang="ar">اناناس - كيوى - لبن</span></p>
-          </div>
-          <div class="item-price">75 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item">
-          <div class="item-emoji">🍈</div>
-          <div class="item-info">
-            <h3 class="item-name">Cantaloupe Banana <span dir="rtl" lang="ar">كنتالوب موز</span></h3>
-          </div>
-          <div class="item-price">70 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item">
-          <div class="item-emoji">🟤</div>
-          <div class="item-info">
-            <h3 class="item-name">Africano <span dir="rtl" lang="ar">افريكانو</span></h3>
-            <p class="item-desc">Date - kiwi<br><span dir="rtl" lang="ar">بلح - كيوى</span></p>
-          </div>
-          <div class="item-price">75 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item">
-          <div class="item-emoji">🌋</div>
-          <div class="item-info">
-            <h3 class="item-name">Volcano <span dir="rtl" lang="ar">فولكانو</span></h3>
-            <p class="item-desc">Banana - peanuts - oreo<br><span dir="rtl" lang="ar">موز - سوداني - اوريو</span></p>
-          </div>
-          <div class="item-price">75 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item">
-          <div class="item-emoji">🥥</div>
-          <div class="item-info">
-            <h3 class="item-name">Pina Colada <span dir="rtl" lang="ar">بيناكولادا</span></h3>
-            <p class="item-desc">Pineapple - coconut<br><span dir="rtl" lang="ar">اناناس - جوزهند</span></p>
-          </div>
-          <div class="item-price">70 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item">
-          <div class="item-emoji">🍯</div>
-          <div class="item-info">
-            <h3 class="item-name">Honey Yogurt <span dir="rtl" lang="ar">زبادي عسل</span></h3>
-          </div>
-          <div class="item-price">65 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item">
-          <div class="item-emoji">🫐</div>
-          <div class="item-info">
-            <h3 class="item-name">Blueberry Yogurt <span dir="rtl" lang="ar">زبادي بلوبيري</span></h3>
-          </div>
-          <div class="item-price">70 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item">
-          <div class="item-emoji">🍓</div>
-          <div class="item-info">
-            <h3 class="item-name">Fruits Yogurt <span dir="rtl" lang="ar">زبادي فواكهة</span></h3>
-          </div>
-          <div class="item-price">75 <span class="currency">EGP</span></div>
-        </div>
-      </div>
-
-      <div class="category-heading">Smoothie <span dir="rtl" lang="ar">سموزي</span></div>
-      <div class="menu-grid">
-        <div class="menu-item">
-          <div class="item-emoji">🥭</div>
-          <div class="item-info">
-            <h3 class="item-name">Mango Smoothie <span dir="rtl" lang="ar">سموزي مانجو</span></h3>
-          </div>
-          <div class="item-price">65 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item">
-          <div class="item-emoji">🫐</div>
-          <div class="item-info">
-            <h3 class="item-name">Blueberry Smoothie <span dir="rtl" lang="ar">سموزي بلوبيري</span></h3>
-          </div>
-          <div class="item-price">65 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item">
-          <div class="item-emoji">🍉</div>
-          <div class="item-info">
-            <h3 class="item-name">Watermelon Smoothie <span dir="rtl" lang="ar">سموزي بطيخ</span></h3>
-          </div>
-          <div class="item-price">65 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item">
-          <div class="item-emoji">🍓</div>
-          <div class="item-info">
-            <h3 class="item-name">Strawberry Smoothie <span dir="rtl" lang="ar">سموزي فراولة</span></h3>
-          </div>
-          <div class="item-price">65 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item">
-          <div class="item-emoji">🍹</div>
-          <div class="item-info">
-            <h3 class="item-name">Passion Fruit Smoothie <span dir="rtl" lang="ar">سموزي باشون فروت</span></h3>
-          </div>
-          <div class="item-price">70 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item">
-          <div class="item-emoji">🍑</div>
-          <div class="item-info">
-            <h3 class="item-name">Mango Peach Smoothie <span dir="rtl" lang="ar">سموزي مانجو خوخ</span></h3>
-          </div>
-          <div class="item-price">70 <span class="currency">EGP</span></div>
-        </div>
-      </div>
-
-      <div class="category-heading">Bakery <span dir="rtl" lang="ar">مخبوزات</span></div>
-      <div class="menu-grid">
-        <div class="menu-item">
-          <div class="item-emoji">🥐</div>
-          <div class="item-info">
-            <h3 class="item-name">Cheese Pâté <span dir="rtl" lang="ar">باتية جبنة</span></h3>
-          </div>
-          <div class="item-price">45 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item">
-          <div class="item-emoji">🥐</div>
-          <div class="item-info">
-            <h3 class="item-name">Plain Croissant <span dir="rtl" lang="ar">كرواسون ساده</span></h3>
-          </div>
-          <div class="item-price">40 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item">
-          <div class="item-emoji">🥐</div>
-          <div class="item-info">
-            <h3 class="item-name">Smoked Turkey Croissant <span dir="rtl" lang="ar">كرواسون رومي مدخن</span></h3>
-          </div>
-          <div class="item-price">65 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item">
-          <div class="item-emoji">🥐</div>
-          <div class="item-info">
-            <h3 class="item-name">Salami Croissant <span dir="rtl" lang="ar">كرواسون سلامي</span></h3>
-          </div>
-          <div class="item-price">65 <span class="currency">EGP</span></div>
-        </div>
-      </div>
-
-      <div class="category-heading">Desserts <span dir="rtl" lang="ar">حلويات</span></div>
-      <div class="menu-grid">
-        <div class="menu-item">
-          <div class="item-emoji">🍩</div>
-          <div class="item-info">
-            <h3 class="item-name">Donuts <span dir="rtl" lang="ar">دونتس</span></h3>
-          </div>
-          <div class="item-price">60 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item">
-          <div class="item-emoji">🍫</div>
-          <div class="item-info">
-            <h3 class="item-name">Nutella Molten Cake <span dir="rtl" lang="ar">مولتن كيك نوتيلا</span></h3>
-          </div>
-          <div class="item-price">85 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item">
-          <div class="item-emoji">🍰</div>
-          <div class="item-info">
-            <h3 class="item-name">Cheesecake <span dir="rtl" lang="ar">تشيز كيك</span></h3>
-          </div>
-          <div class="item-price">80 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item">
-          <div class="item-emoji">🍓</div>
-          <div class="item-info">
-            <h3 class="item-name">Fruit Salad <span dir="rtl" lang="ar">فروت سلاد</span></h3>
-          </div>
-          <div class="item-price">75 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item">
-          <div class="item-emoji">🍫</div>
-          <div class="item-info">
-            <h3 class="item-name">Brownies <span dir="rtl" lang="ar">براونيز</span></h3>
-          </div>
-          <div class="item-price">65 <span class="currency">EGP</span></div>
-        </div>
-      </div>
-
-      <div class="category-heading">Shisha <span dir="rtl" lang="ar">شيشة</span></div>
-      <div class="menu-grid">
-        <div class="menu-item">
-          <div class="item-emoji">🍎</div>
-          <div class="item-info">
-            <h3 class="item-name">Shisha M3sl <span dir="rtl" lang="ar">شيشة معسل</span></h3>
-          </div>
-          <div class="item-price">20 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item">
-          <div class="item-emoji">💨</div>
-          <div class="item-info">
-            <h3 class="item-name">Shisha Fakher <span dir="rtl" lang="ar">شيشة فاخر</span></h3>
-          </div>
-          <div class="item-price">70 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item">
-          <div class="item-emoji">🐪</div>
-          <div class="item-info">
-            <h3 class="item-name">Shisha Ma8rby <span dir="rtl" lang="ar">شيشة مغربي</span></h3>
-          </div>
-          <div class="item-price">60 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item">
-          <div class="item-emoji">🌟</div>
-          <div class="item-info">
-            <h3 class="item-name">Shisha VIP <span dir="rtl" lang="ar">شيشة vip</span></h3>
-          </div>
-          <div class="item-price">100 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item">
-          <div class="item-emoji">🩺</div>
-          <div class="item-info">
-            <h3 class="item-name">Medical Laee <span dir="rtl" lang="ar">لي طبي</span></h3>
-          </div>
-          <div class="item-price">10 <span class="currency">EGP</span></div>
-        </div>
-      </div>
-
-      <div class="category-heading">Additions <span dir="rtl" lang="ar">اضافات</span></div>
-      <div class="menu-grid">
-        <div class="menu-item">
-          <div class="item-emoji">🥛</div>
-          <div class="item-info">
-            <h3 class="item-name">Milk <span dir="rtl" lang="ar">لبن</span></h3>
-          </div>
-          <div class="item-price">10 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item">
-          <div class="item-emoji">🧴</div>
-          <div class="item-info">
-            <h3 class="item-name">Flavor <span dir="rtl" lang="ar">فليفر</span></h3>
-          </div>
-          <div class="item-price">10 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item">
-          <div class="item-emoji">🥜</div>
-          <div class="item-info">
-            <h3 class="item-name">Nuts <span dir="rtl" lang="ar">مكسرات</span></h3>
-          </div>
-          <div class="item-price">15 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item">
-          <div class="item-emoji">🍡</div>
-          <div class="item-info">
-            <h3 class="item-name">Toppings <span dir="rtl" lang="ar">توبينج</span></h3>
-          </div>
-          <div class="item-price">10 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item">
-          <div class="item-emoji">🍫</div>
-          <div class="item-info">
-            <h3 class="item-name">Nutella <span dir="rtl" lang="ar">نوتيلا</span></h3>
-          </div>
-          <div class="item-price">10 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item">
-          <div class="item-emoji">🍦</div>
-          <div class="item-info">
-            <h3 class="item-name">Ice Cream <span dir="rtl" lang="ar">ايس كريم</span></h3>
-          </div>
-          <div class="item-price">15 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item">
-          <div class="item-emoji">🍯</div>
-          <div class="item-info">
-            <h3 class="item-name">Honey <span dir="rtl" lang="ar">عسل</span></h3>
-          </div>
-          <div class="item-price">10 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item">
-          <div class="item-emoji">🫖</div>
-          <div class="item-info">
-            <h3 class="item-name">Fatla <span dir="rtl" lang="ar">فتلة</span></h3>
-          </div>
-          <div class="item-price">5 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item">
-          <div class="item-emoji">🍓</div>
-          <div class="item-info">
-            <h3 class="item-name">Fruits <span dir="rtl" lang="ar">فاكهة</span></h3>
-          </div>
-          <div class="item-price">15 <span class="currency">EGP</span></div>
-        </div>
-      </div>
-
     </div>
 
-    <!-- Greek meander border bottom -->
+    <!-- Floating category nav bar -->
+    <div id="ssBadge">
+      <div class="badge-scroll" id="ssBadgeScroll"></div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════
+         SCROLL STACK MENU
+         ═══════════════════════════════════════════ -->
+    <div class="ss-menu-wrapper" id="ssMenuWrapper">
+
+      <!-- ── 1. HOT DRINKS ── -->
+      <div class="ss-section" data-index="0" data-name="Hot Drinks">
+        <div class="ss-card-sticky">
+          <div class="ss-card">
+            <div class="ss-card-bg"
+              style="--ss-img: url('https://images.unsplash.com/photo-1541167760496-1628856ab772?q=80&w=1200&auto=format&fit=crop')">
+            </div>
+            <div class="ss-card-overlay"></div>
+            <div class="ss-card-num">01</div>
+            <div class="ss-card-footer">
+              <div>
+                <div class="ss-card-en">Hot Drinks</div>
+                <div class="ss-card-ar" dir="rtl" lang="ar">مشروبات ساخنة</div>
+              </div>
+              <div class="ss-card-emoji">☕</div>
+            </div>
+          </div>
+        </div>
+        <div class="ss-items">
+          <div class="menu-grid">
+            <div class="menu-item">
+              <div class="item-emoji">☕</div>
+              <div class="item-info">
+                <h3 class="item-name">Espresso <span dir="rtl" lang="ar">اسبريسو</span></h3>
+              </div>
+              <div class="item-price">40 <span class="currency">EGP</span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-emoji">☕</div>
+              <div class="item-info">
+                <h3 class="item-name">Double Espresso <span dir="rtl" lang="ar">اسبريسو دبل</span></h3>
+              </div>
+              <div class="item-price">50 <span class="currency">EGP</span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-emoji">☕</div>
+              <div class="item-info">
+                <h3 class="item-name">Macchiato <span dir="rtl" lang="ar">مكياتو</span></h3>
+              </div>
+              <div class="item-price">45 <span class="currency">EGP</span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-emoji">☕</div>
+              <div class="item-info">
+                <h3 class="item-name">Macchiato Double <span dir="rtl" lang="ar">مكياتو دبل</span></h3>
+              </div>
+              <div class="item-price">55 <span class="currency">EGP</span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-emoji">🍫</div>
+              <div class="item-info">
+                <h3 class="item-name">Espresso Nutella <span dir="rtl" lang="ar">اسبريسو نوتيلا</span></h3>
+              </div>
+              <div class="item-price">45 <span class="currency">EGP</span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-emoji">☕</div>
+              <div class="item-info">
+                <h3 class="item-name">Cappuccino <span dir="rtl" lang="ar">كابتشينو</span></h3>
+              </div>
+              <div class="item-price">60 <span class="currency">EGP</span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-emoji">☕</div>
+              <div class="item-info">
+                <h3 class="item-name">Mocha <span dir="rtl" lang="ar">موكا</span></h3>
+              </div>
+              <div class="item-price">65 <span class="currency">EGP</span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-emoji">☕</div>
+              <div class="item-info">
+                <h3 class="item-name">Latte <span dir="rtl" lang="ar">لاتيه</span></h3>
+              </div>
+              <div class="item-price">60 <span class="currency">EGP</span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-emoji">☕</div>
+              <div class="item-info">
+                <h3 class="item-name">Nescafe <span dir="rtl" lang="ar">نسكافية</span></h3>
+              </div>
+              <div class="item-price">50 <span class="currency">EGP</span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-emoji">☕</div>
+              <div class="item-info">
+                <h3 class="item-name">Flat White <span dir="rtl" lang="ar">فلات وايت</span></h3>
+              </div>
+              <div class="item-price">65 <span class="currency">EGP</span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-emoji">☕</div>
+              <div class="item-info">
+                <h3 class="item-name">American Coffee <span dir="rtl" lang="ar">اميركان كوفي</span></h3>
+              </div>
+              <div class="item-price">50 <span class="currency">EGP</span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-emoji">☕</div>
+              <div class="item-info">
+                <h3 class="item-name">Turkish Coffee <span dir="rtl" lang="ar">قهوة تركى</span></h3>
+              </div>
+              <div class="item-price">30 <span class="currency">EGP</span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-emoji">☕</div>
+              <div class="item-info">
+                <h3 class="item-name">Turkish Coffee Double <span dir="rtl" lang="ar">قهوة دبل</span></h3>
+              </div>
+              <div class="item-price">40 <span class="currency">EGP</span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-emoji">☕</div>
+              <div class="item-info">
+                <h3 class="item-name">French Coffee <span dir="rtl" lang="ar">قهوة فرنساوى</span></h3>
+              </div>
+              <div class="item-price">50 <span class="currency">EGP</span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-emoji">🌰</div>
+              <div class="item-info">
+                <h3 class="item-name">Hazelnut Coffee <span dir="rtl" lang="ar">قهوة بندق</span></h3>
+              </div>
+              <div class="item-price">50 <span class="currency">EGP</span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-emoji">🍫</div>
+              <div class="item-info">
+                <h3 class="item-name">Nutella Coffee <span dir="rtl" lang="ar">قهوة نوتيلا</span></h3>
+              </div>
+              <div class="item-price">50 <span class="currency">EGP</span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-emoji">🍫</div>
+              <div class="item-info">
+                <h3 class="item-name">Hot Chocolate <span dir="rtl" lang="ar">هوت تشوكليت</span></h3>
+              </div>
+              <div class="item-price">60 <span class="currency">EGP</span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-emoji">🍎</div>
+              <div class="item-info">
+                <h3 class="item-name">Hot Cider <span dir="rtl" lang="ar">هوت سيدر</span></h3>
+              </div>
+              <div class="item-price">50 <span class="currency">EGP</span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-emoji">🫖</div>
+              <div class="item-info">
+                <h3 class="item-name">Tea <span dir="rtl" lang="ar">شاى</span></h3>
+              </div>
+              <div class="item-price">25 <span class="currency">EGP</span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-emoji">🌿</div>
+              <div class="item-info">
+                <h3 class="item-name">Herbs <span dir="rtl" lang="ar">اعشاب</span></h3>
+              </div>
+              <div class="item-price">35 <span class="currency">EGP</span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-emoji">🍋</div>
+              <div class="item-info">
+                <h3 class="item-name">Vitamin C <span dir="rtl" lang="ar">فيتامين سي</span></h3>
+              </div>
+              <div class="item-price">45 <span class="currency">EGP</span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-emoji">🫖</div>
+              <div class="item-info">
+                <h3 class="item-name">Ahmed Tea <span dir="rtl" lang="ar">شاى احمد</span></h3>
+              </div>
+              <div class="item-price">35 <span class="currency">EGP</span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-emoji">🫖</div>
+              <div class="item-info">
+                <h3 class="item-name">Helba <span dir="rtl" lang="ar">حلبة</span></h3>
+              </div>
+              <div class="item-price">30 <span class="currency">EGP</span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-emoji">☕</div>
+              <div class="item-info">
+                <h3 class="item-name">Coffee Mix <span dir="rtl" lang="ar">كوفي ميكس</span></h3>
+              </div>
+              <div class="item-price">40 <span class="currency">EGP</span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-emoji">🥛</div>
+              <div class="item-info">
+                <h3 class="item-name">Sahlab with Nuts <span dir="rtl" lang="ar">سحلب مكسرات</span></h3>
+              </div>
+              <div class="item-price">65 <span class="currency">EGP</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── 2. COLD DRINKS ── -->
+      <div class="ss-section" data-index="1" data-name="Cold Drinks">
+        <div class="ss-card-sticky">
+          <div class="ss-card">
+            <div class="ss-card-bg" style="--ss-img: url('/assets/images/gallery/cold-drinks.jpg')"></div>
+            <div class="ss-card-overlay"></div>
+            <div class="ss-card-num">02</div>
+            <div class="ss-card-footer">
+              <div>
+                <div class="ss-card-en">Cold Drinks</div>
+                <div class="ss-card-ar" dir="rtl" lang="ar">مشروبات بارده</div>
+              </div>
+              <div class="ss-card-emoji">🧊</div>
+            </div>
+          </div>
+        </div>
+        <div class="ss-items">
+          <div class="menu-grid">
+            <div class="menu-item">
+              <div class="item-emoji">🧊</div>
+              <div class="item-info">
+                <h3 class="item-name">Frappuccino <span dir="rtl" lang="ar">فرابتشينو</span></h3>
+              </div>
+              <div class="item-price">65 <span class="currency">EGP</span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-emoji">🧊</div>
+              <div class="item-info">
+                <h3 class="item-name">Iced Latte <span dir="rtl" lang="ar">ايس لاتيه</span></h3>
+              </div>
+              <div class="item-price">70 <span class="currency">EGP</span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-emoji">🧊</div>
+              <div class="item-info">
+                <h3 class="item-name">Iced Mocha <span dir="rtl" lang="ar">ايس موكا</span></h3>
+              </div>
+              <div class="item-price">75 <span class="currency">EGP</span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-emoji">🧊</div>
+              <div class="item-info">
+                <h3 class="item-name">Iced White Mocha <span dir="rtl" lang="ar">ايس وايت موكا</span></h3>
+              </div>
+              <div class="item-price">75 <span class="currency">EGP</span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-emoji">🧊</div>
+              <div class="item-info">
+                <h3 class="item-name">Iced Coffee <span dir="rtl" lang="ar">ايس كوفي</span></h3>
+              </div>
+              <div class="item-price">65 <span class="currency">EGP</span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-emoji">🧊</div>
+              <div class="item-info">
+                <h3 class="item-name">Iced Chocolate <span dir="rtl" lang="ar">ايس تشوكليت</span></h3>
+              </div>
+              <div class="item-price">70 <span class="currency">EGP</span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-emoji">🧊</div>
+              <div class="item-info">
+                <h3 class="item-name">Iced Spanish Latte <span dir="rtl" lang="ar">ايس سبانيش لاتيه</span></h3>
+              </div>
+              <div class="item-price">75 <span class="currency">EGP</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── 3. MILKSHAKE ── -->
+      <div class="ss-section" data-index="2" data-name="Milkshake">
+        <div class="ss-card-sticky">
+          <div class="ss-card">
+            <div class="ss-card-bg"
+              style="--ss-img: url('https://images.unsplash.com/photo-1572490122747-3968b75cc699?q=80&w=1200&auto=format&fit=crop')">
+            </div>
+            <div class="ss-card-overlay"></div>
+            <div class="ss-card-num">03</div>
+            <div class="ss-card-footer">
+              <div>
+                <div class="ss-card-en">Milkshake</div>
+                <div class="ss-card-ar" dir="rtl" lang="ar">ميلك شيك</div>
+              </div>
+              <div class="ss-card-emoji">🥛</div>
+            </div>
+          </div>
+        </div>
+        <div class="ss-items">
+          <div class="menu-grid">
+            <div class="menu-item">
+              <div class="item-emoji">🥛</div>
+              <div class="item-info">
+                <h3 class="item-name">Milkshake <span dir="rtl" lang="ar">ميلك شيك</span></h3>
+                <p class="item-desc">Mango - Vanilla - Strawberry - Chocolate - Caramel - Blueberry<br><span dir="rtl"
+                    lang="ar">مانجو - فانيليا - فراولة - شيكولاتة - كراميل - بلوبيرى</span></p>
+              </div>
+              <div class="item-price">75 <span class="currency">EGP</span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-emoji">🍫</div>
+              <div class="item-info">
+                <h3 class="item-name">Nutella Milkshake <span dir="rtl" lang="ar">ميلك شيك نوتيلا</span></h3>
+              </div>
+              <div class="item-price">80 <span class="currency">EGP</span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-emoji">🍪</div>
+              <div class="item-info">
+                <h3 class="item-name">Oreo Milkshake <span dir="rtl" lang="ar">ميلك شيك اوريو</span></h3>
+              </div>
+              <div class="item-price">80 <span class="currency">EGP</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── 4. ICE CREAM ── -->
+      <div class="ss-section" data-index="3" data-name="Ice Cream">
+        <div class="ss-card-sticky">
+          <div class="ss-card">
+            <div class="ss-card-bg"
+              style="--ss-img: url('https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?q=80&w=1200&auto=format&fit=crop')">
+            </div>
+            <div class="ss-card-overlay"></div>
+            <div class="ss-card-num">04</div>
+            <div class="ss-card-footer">
+              <div>
+                <div class="ss-card-en">Ice Cream</div>
+                <div class="ss-card-ar" dir="rtl" lang="ar">ايس كريم</div>
+              </div>
+              <div class="ss-card-emoji">🍨</div>
+            </div>
+          </div>
+        </div>
+        <div class="ss-items">
+          <div class="menu-grid">
+            <div class="menu-item">
+              <div class="item-emoji">🍨</div>
+              <div class="item-info">
+                <h3 class="item-name">Classic Ice Cream <span dir="rtl" lang="ar">ايس كريم كلاسيك</span></h3>
+                <p class="item-desc">3 Bowls of your choice<br><span dir="rtl" lang="ar">ثلاثة بولة من اختيارك</span>
+                </p>
+              </div>
+              <div class="item-price">60 <span class="currency">EGP</span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-emoji">🍧</div>
+              <div class="item-info">
+                <h3 class="item-name">La Palma Ice Cream <span dir="rtl" lang="ar">ايس كريم لابالما</span></h3>
+                <p class="item-desc">3 Bowls with nuts and fruits<br><span dir="rtl" lang="ar">ثلاثة بولة مع مكسرات و
+                    فاكهة</span></p>
+              </div>
+              <div class="item-price">75 <span class="currency">EGP</span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-emoji">🍌</div>
+              <div class="item-info">
+                <h3 class="item-name">Banana Split <span dir="rtl" lang="ar">بانانا سبليت ايس كريم</span></h3>
+                <p class="item-desc">2 Bowls + 2 bananas<br><span dir="rtl" lang="ar">بولتين مع اتنين موزة</span></p>
+              </div>
+              <div class="item-price">85 <span class="currency">EGP</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── 5. SOFT DRINKS ── -->
+      <div class="ss-section" data-index="4" data-name="Soft Drinks">
+        <div class="ss-card-sticky">
+          <div class="ss-card">
+            <div class="ss-card-bg"
+              style="--ss-img: url('https://images.unsplash.com/photo-1622483767028-3f66f32aef97?q=80&w=1200&auto=format&fit=crop')">
+            </div>
+            <div class="ss-card-overlay"></div>
+            <div class="ss-card-num">05</div>
+            <div class="ss-card-footer">
+              <div>
+                <div class="ss-card-en">Soft Drinks</div>
+                <div class="ss-card-ar" dir="rtl" lang="ar">مشروبات غازية</div>
+              </div>
+              <div class="ss-card-emoji">🥤</div>
+            </div>
+          </div>
+        </div>
+        <div class="ss-items">
+          <div class="menu-grid">
+            <div class="menu-item">
+              <div class="item-emoji">🧊</div>
+              <div class="item-info">
+                <h3 class="item-name">Mineral Water <span dir="rtl" lang="ar">مياه معدنية</span></h3>
+              </div>
+              <div class="item-price">10 <span class="currency">EGP</span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-emoji">🥤</div>
+              <div class="item-info">
+                <h3 class="item-name">Cans <span dir="rtl" lang="ar">كانز</span></h3>
+              </div>
+              <div class="item-price">45 <span class="currency">EGP</span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-emoji">🍋</div>
+              <div class="item-info">
+                <h3 class="item-name">Fayrouz or Schweppes <span dir="rtl" lang="ar">فيروز او شويبس</span></h3>
+              </div>
+              <div class="item-price">50 <span class="currency">EGP</span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-emoji">🔋</div>
+              <div class="item-info">
+                <h3 class="item-name">Red Bull <span dir="rtl" lang="ar">ريد بل</span></h3>
+              </div>
+              <div class="item-price">85 <span class="currency">EGP</span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-emoji">⚡</div>
+              <div class="item-info">
+                <h3 class="item-name">Sting <span dir="rtl" lang="ar">ستينج</span></h3>
+              </div>
+              <div class="item-price">40 <span class="currency">EGP</span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-emoji">🍺</div>
+              <div class="item-info">
+                <h3 class="item-name">Beirel <span dir="rtl" lang="ar">بيريل</span></h3>
+              </div>
+              <div class="item-price">50 <span class="currency">EGP</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── 6. FRESH JUICE ── -->
+      <div class="ss-section" data-index="5" data-name="Fresh Juice">
+        <div class="ss-card-sticky">
+          <div class="ss-card">
+            <div class="ss-card-bg"
+              style="--ss-img: url('https://images.unsplash.com/photo-1600271886742-f049cd451bba?q=80&w=1200&auto=format&fit=crop')">
+            </div>
+            <div class="ss-card-overlay"></div>
+            <div class="ss-card-num">06</div>
+            <div class="ss-card-footer">
+              <div>
+                <div class="ss-card-en">Fresh Juice</div>
+                <div class="ss-card-ar" dir="rtl" lang="ar">عصائر فريش</div>
+              </div>
+              <div class="ss-card-emoji">🍊</div>
+            </div>
+          </div>
+        </div>
+        <div class="ss-items">
+          <div class="menu-grid">
+            <div class="menu-item">
+              <div class="item-emoji">🥭</div>
+              <div class="item-info">
+                <h3 class="item-name">Mango <span dir="rtl" lang="ar">مانجو</span></h3>
+              </div>
+              <div class="item-price">70 <span class="currency">EGP</span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-emoji">🍓</div>
+              <div class="item-info">
+                <h3 class="item-name">Strawberry <span dir="rtl" lang="ar">فراولة</span></h3>
+              </div>
+              <div class="item-price">65 <span class="currency">EGP</span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-emoji">🍐</div>
+              <div class="item-info">
+                <h3 class="item-name">Guava <span dir="rtl" lang="ar">جوافة</span></h3>
+              </div>
+              <div class="item-price">65 <span class="currency">EGP</span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-emoji">🍌</div>
+              <div class="item-info">
+                <h3 class="item-name">Banana <span dir="rtl" lang="ar">موز</span></h3>
+              </div>
+              <div class="item-price">65 <span class="currency">EGP</span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-emoji">🍉</div>
+              <div class="item-info">
+                <h3 class="item-name">Watermelon <span dir="rtl" lang="ar">بطيخ</span></h3>
+              </div>
+              <div class="item-price">65 <span class="currency">EGP</span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-emoji">🔴</div>
+              <div class="item-info">
+                <h3 class="item-name">Pomegranate <span dir="rtl" lang="ar">رمان</span></h3>
+              </div>
+              <div class="item-price">65 <span class="currency">EGP</span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-emoji">🟤</div>
+              <div class="item-info">
+                <h3 class="item-name">Dates <span dir="rtl" lang="ar">بلح</span></h3>
+              </div>
+              <div class="item-price">65 <span class="currency">EGP</span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-emoji">🍋</div>
+              <div class="item-info">
+                <h3 class="item-name">Lemon <span dir="rtl" lang="ar">ليمون</span></h3>
+              </div>
+              <div class="item-price">50 <span class="currency">EGP</span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-emoji">🌿</div>
+              <div class="item-info">
+                <h3 class="item-name">Lemon Mint <span dir="rtl" lang="ar">ليمون نعناع</span></h3>
+              </div>
+              <div class="item-price">55 <span class="currency">EGP</span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-emoji">🍊</div>
+              <div class="item-info">
+                <h3 class="item-name">Orange <span dir="rtl" lang="ar">برتقال</span></h3>
+              </div>
+              <div class="item-price">60 <span class="currency">EGP</span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-emoji">🍑</div>
+              <div class="item-info">
+                <h3 class="item-name">Peach <span dir="rtl" lang="ar">خوخ</span></h3>
+              </div>
+              <div class="item-price">65 <span class="currency">EGP</span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-emoji">🍇</div>
+              <div class="item-info">
+                <h3 class="item-name">Grape <span dir="rtl" lang="ar">عنب</span></h3>
+              </div>
+              <div class="item-price">65 <span class="currency">EGP</span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-emoji">🍍</div>
+              <div class="item-info">
+                <h3 class="item-name">Pineapple <span dir="rtl" lang="ar">اناناس</span></h3>
+              </div>
+              <div class="item-price">65 <span class="currency">EGP</span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-emoji">🥝</div>
+              <div class="item-info">
+                <h3 class="item-name">Kiwi <span dir="rtl" lang="ar">كيوي</span></h3>
+              </div>
+              <div class="item-price">70 <span class="currency">EGP</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── 7. COCKTAILS ── -->
+      <div class="ss-section" data-index="6" data-name="Cocktails">
+        <div class="ss-card-sticky">
+          <div class="ss-card">
+            <div class="ss-card-bg" style="--ss-img: url('/assets/images/gallery/cocktails.jpg')"></div>
+            <div class="ss-card-overlay"></div>
+            <div class="ss-card-num">07</div>
+            <div class="ss-card-footer">
+              <div>
+                <div class="ss-card-en">Cocktails</div>
+                <div class="ss-card-ar" dir="rtl" lang="ar">كوكتيل</div>
+              </div>
+              <div class="ss-card-emoji">🍹</div>
+            </div>
+          </div>
+        </div>
+        <div class="ss-items">
+          <div class="menu-grid">
+            <div class="menu-item">
+              <div class="item-emoji">🍹</div>
+              <div class="item-info">
+                <h3 class="item-name">Cocktail <span dir="rtl" lang="ar">كوكتيل</span></h3>
+                <p class="item-desc">Banana - dates - honey - milk - nuts<br><span dir="rtl" lang="ar">موز - بلح - عسل -
+                    لبن - مكسرات</span></p>
+              </div>
+              <div class="item-price">75 <span class="currency">EGP</span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-emoji">🌿</div>
+              <div class="item-info">
+                <h3 class="item-name">Mojito <span dir="rtl" lang="ar">موهيتو</span></h3>
+              </div>
+              <div class="item-price">65 <span class="currency">EGP</span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-emoji">🥭</div>
+              <div class="item-info">
+                <h3 class="item-name">Manganito <span dir="rtl" lang="ar">مانجانيتو</span></h3>
+                <p class="item-desc">Mango - strawberry - ice cream<br><span dir="rtl" lang="ar">مانجو - فراولة - ايس
+                    كريم</span></p>
+              </div>
+              <div class="item-price">75 <span class="currency">EGP</span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-emoji">🥝</div>
+              <div class="item-info">
+                <h3 class="item-name">Kiwana <span dir="rtl" lang="ar">كيوانا</span></h3>
+                <p class="item-desc">Kiwi - peach<br><span dir="rtl" lang="ar">كيوى - خوخ</span></p>
+              </div>
+              <div class="item-price">75 <span class="currency">EGP</span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-emoji">🍐</div>
+              <div class="item-info">
+                <h3 class="item-name">Green Heaven <span dir="rtl" lang="ar">جرين هيفن</span></h3>
+                <p class="item-desc">Guava - mint<br><span dir="rtl" lang="ar">جوافة - نعناع</span></p>
+              </div>
+              <div class="item-price">70 <span class="currency">EGP</span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-emoji">🌊</div>
+              <div class="item-info">
+                <h3 class="item-name">Blue Sea <span dir="rtl" lang="ar">بلو سي</span></h3>
+              </div>
+              <div class="item-price">65 <span class="currency">EGP</span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-emoji">🍓</div>
+              <div class="item-info">
+                <h3 class="item-name">Farawlety <span dir="rtl" lang="ar">فراولتي</span></h3>
+                <p class="item-desc">Strawberry - banana<br><span dir="rtl" lang="ar">فراولة - موز</span></p>
+              </div>
+              <div class="item-price">70 <span class="currency">EGP</span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-emoji">🍍</div>
+              <div class="item-info">
+                <h3 class="item-name">Ananaso <span dir="rtl" lang="ar">اناناسو</span></h3>
+                <p class="item-desc">Pineapple - kiwi - milk<br><span dir="rtl" lang="ar">اناناس - كيوى - لبن</span></p>
+              </div>
+              <div class="item-price">75 <span class="currency">EGP</span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-emoji">🍈</div>
+              <div class="item-info">
+                <h3 class="item-name">Cantaloupe Banana <span dir="rtl" lang="ar">كنتالوب موز</span></h3>
+              </div>
+              <div class="item-price">70 <span class="currency">EGP</span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-emoji">🟤</div>
+              <div class="item-info">
+                <h3 class="item-name">Africano <span dir="rtl" lang="ar">افريكانو</span></h3>
+                <p class="item-desc">Date - kiwi<br><span dir="rtl" lang="ar">بلح - كيوى</span></p>
+              </div>
+              <div class="item-price">75 <span class="currency">EGP</span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-emoji">🌋</div>
+              <div class="item-info">
+                <h3 class="item-name">Volcano <span dir="rtl" lang="ar">فولكانو</span></h3>
+                <p class="item-desc">Banana - peanuts - oreo<br><span dir="rtl" lang="ar">موز - سوداني - اوريو</span>
+                </p>
+              </div>
+              <div class="item-price">75 <span class="currency">EGP</span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-emoji">🥥</div>
+              <div class="item-info">
+                <h3 class="item-name">Pina Colada <span dir="rtl" lang="ar">بيناكولادا</span></h3>
+                <p class="item-desc">Pineapple - coconut<br><span dir="rtl" lang="ar">اناناس - جوزهند</span></p>
+              </div>
+              <div class="item-price">70 <span class="currency">EGP</span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-emoji">🍯</div>
+              <div class="item-info">
+                <h3 class="item-name">Honey Yogurt <span dir="rtl" lang="ar">زبادي عسل</span></h3>
+              </div>
+              <div class="item-price">65 <span class="currency">EGP</span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-emoji">🫐</div>
+              <div class="item-info">
+                <h3 class="item-name">Blueberry Yogurt <span dir="rtl" lang="ar">زبادي بلوبيري</span></h3>
+              </div>
+              <div class="item-price">70 <span class="currency">EGP</span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-emoji">🍓</div>
+              <div class="item-info">
+                <h3 class="item-name">Fruits Yogurt <span dir="rtl" lang="ar">زبادي فواكهة</span></h3>
+              </div>
+              <div class="item-price">75 <span class="currency">EGP</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── 8. SMOOTHIE ── -->
+      <div class="ss-section" data-index="7" data-name="Smoothie">
+        <div class="ss-card-sticky">
+          <div class="ss-card">
+            <div class="ss-card-bg"
+              style="--ss-img: url('https://images.unsplash.com/photo-1505252585461-04db1eb84625?q=80&w=1200&auto=format&fit=crop')">
+            </div>
+            <div class="ss-card-overlay"></div>
+            <div class="ss-card-num">08</div>
+            <div class="ss-card-footer">
+              <div>
+                <div class="ss-card-en">Smoothie</div>
+                <div class="ss-card-ar" dir="rtl" lang="ar">سموزي</div>
+              </div>
+              <div class="ss-card-emoji">🍹</div>
+            </div>
+          </div>
+        </div>
+        <div class="ss-items">
+          <div class="menu-grid">
+            <div class="menu-item">
+              <div class="item-emoji">🥭</div>
+              <div class="item-info">
+                <h3 class="item-name">Mango Smoothie <span dir="rtl" lang="ar">سموزي مانجو</span></h3>
+              </div>
+              <div class="item-price">65 <span class="currency">EGP</span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-emoji">🫐</div>
+              <div class="item-info">
+                <h3 class="item-name">Blueberry Smoothie <span dir="rtl" lang="ar">سموزي بلوبيري</span></h3>
+              </div>
+              <div class="item-price">65 <span class="currency">EGP</span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-emoji">🍉</div>
+              <div class="item-info">
+                <h3 class="item-name">Watermelon Smoothie <span dir="rtl" lang="ar">سموزي بطيخ</span></h3>
+              </div>
+              <div class="item-price">65 <span class="currency">EGP</span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-emoji">🍓</div>
+              <div class="item-info">
+                <h3 class="item-name">Strawberry Smoothie <span dir="rtl" lang="ar">سموزي فراولة</span></h3>
+              </div>
+              <div class="item-price">65 <span class="currency">EGP</span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-emoji">🍹</div>
+              <div class="item-info">
+                <h3 class="item-name">Passion Fruit Smoothie <span dir="rtl" lang="ar">سموزي باشون فروت</span></h3>
+              </div>
+              <div class="item-price">70 <span class="currency">EGP</span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-emoji">🍑</div>
+              <div class="item-info">
+                <h3 class="item-name">Mango Peach Smoothie <span dir="rtl" lang="ar">سموزي مانجو خوخ</span></h3>
+              </div>
+              <div class="item-price">70 <span class="currency">EGP</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── 9. BAKERY ── -->
+      <div class="ss-section" data-index="8" data-name="Bakery">
+        <div class="ss-card-sticky">
+          <div class="ss-card">
+            <div class="ss-card-bg" style="--ss-img: url('/assets/images/gallery/bakery.jpg')"></div>
+            <div class="ss-card-overlay"></div>
+            <div class="ss-card-num">09</div>
+            <div class="ss-card-footer">
+              <div>
+                <div class="ss-card-en">Bakery</div>
+                <div class="ss-card-ar" dir="rtl" lang="ar">مخبوزات</div>
+              </div>
+              <div class="ss-card-emoji">🥐</div>
+            </div>
+          </div>
+        </div>
+        <div class="ss-items">
+          <div class="menu-grid">
+            <div class="menu-item">
+              <div class="item-emoji">🥐</div>
+              <div class="item-info">
+                <h3 class="item-name">Cheese Pâté <span dir="rtl" lang="ar">باتية جبنة</span></h3>
+              </div>
+              <div class="item-price">45 <span class="currency">EGP</span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-emoji">🥐</div>
+              <div class="item-info">
+                <h3 class="item-name">Plain Croissant <span dir="rtl" lang="ar">كرواسون ساده</span></h3>
+              </div>
+              <div class="item-price">40 <span class="currency">EGP</span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-emoji">🥐</div>
+              <div class="item-info">
+                <h3 class="item-name">Smoked Turkey Croissant <span dir="rtl" lang="ar">كرواسون رومي مدخن</span></h3>
+              </div>
+              <div class="item-price">65 <span class="currency">EGP</span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-emoji">🥐</div>
+              <div class="item-info">
+                <h3 class="item-name">Salami Croissant <span dir="rtl" lang="ar">كرواسون سلامي</span></h3>
+              </div>
+              <div class="item-price">65 <span class="currency">EGP</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── 10. DESSERTS ── -->
+      <div class="ss-section" data-index="9" data-name="Desserts">
+        <div class="ss-card-sticky">
+          <div class="ss-card">
+            <div class="ss-card-bg"
+              style="--ss-img: url('https://images.unsplash.com/photo-1551024601-bec78aea704b?q=80&w=1200&auto=format&fit=crop')">
+            </div>
+            <div class="ss-card-overlay"></div>
+            <div class="ss-card-num">10</div>
+            <div class="ss-card-footer">
+              <div>
+                <div class="ss-card-en">Desserts</div>
+                <div class="ss-card-ar" dir="rtl" lang="ar">حلويات</div>
+              </div>
+              <div class="ss-card-emoji">🍰</div>
+            </div>
+          </div>
+        </div>
+        <div class="ss-items">
+          <div class="menu-grid">
+            <div class="menu-item">
+              <div class="item-emoji">🍩</div>
+              <div class="item-info">
+                <h3 class="item-name">Donuts <span dir="rtl" lang="ar">دونتس</span></h3>
+              </div>
+              <div class="item-price">60 <span class="currency">EGP</span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-emoji">🍫</div>
+              <div class="item-info">
+                <h3 class="item-name">Nutella Molten Cake <span dir="rtl" lang="ar">مولتن كيك نوتيلا</span></h3>
+              </div>
+              <div class="item-price">85 <span class="currency">EGP</span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-emoji">🍰</div>
+              <div class="item-info">
+                <h3 class="item-name">Cheesecake <span dir="rtl" lang="ar">تشيز كيك</span></h3>
+              </div>
+              <div class="item-price">80 <span class="currency">EGP</span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-emoji">🍓</div>
+              <div class="item-info">
+                <h3 class="item-name">Fruit Salad <span dir="rtl" lang="ar">فروت سلاد</span></h3>
+              </div>
+              <div class="item-price">75 <span class="currency">EGP</span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-emoji">🍫</div>
+              <div class="item-info">
+                <h3 class="item-name">Brownies <span dir="rtl" lang="ar">براونيز</span></h3>
+              </div>
+              <div class="item-price">65 <span class="currency">EGP</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── 11. SHISHA ── -->
+      <div class="ss-section" data-index="10" data-name="Shisha">
+        <div class="ss-card-sticky">
+          <div class="ss-card">
+            <div class="ss-card-bg" style="--ss-img: url('/assets/images/gallery/shisha.jpg')"></div>
+            <div class="ss-card-overlay"></div>
+            <div class="ss-card-num">11</div>
+            <div class="ss-card-footer">
+              <div>
+                <div class="ss-card-en">Shisha</div>
+                <div class="ss-card-ar" dir="rtl" lang="ar">شيشة</div>
+              </div>
+              <div class="ss-card-emoji">💨</div>
+            </div>
+          </div>
+        </div>
+        <div class="ss-items">
+          <div class="menu-grid">
+            <div class="menu-item">
+              <div class="item-emoji">🍎</div>
+              <div class="item-info">
+                <h3 class="item-name">Shisha M3sl <span dir="rtl" lang="ar">شيشة معسل</span></h3>
+              </div>
+              <div class="item-price">20 <span class="currency">EGP</span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-emoji">💨</div>
+              <div class="item-info">
+                <h3 class="item-name">Shisha Fakher <span dir="rtl" lang="ar">شيشة فاخر</span></h3>
+              </div>
+              <div class="item-price">70 <span class="currency">EGP</span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-emoji">🐪</div>
+              <div class="item-info">
+                <h3 class="item-name">Shisha Ma8rby <span dir="rtl" lang="ar">شيشة مغربي</span></h3>
+              </div>
+              <div class="item-price">60 <span class="currency">EGP</span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-emoji">🌟</div>
+              <div class="item-info">
+                <h3 class="item-name">Shisha VIP <span dir="rtl" lang="ar">شيشة vip</span></h3>
+              </div>
+              <div class="item-price">100 <span class="currency">EGP</span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-emoji">🩺</div>
+              <div class="item-info">
+                <h3 class="item-name">Medical Laee <span dir="rtl" lang="ar">لي طبي</span></h3>
+              </div>
+              <div class="item-price">10 <span class="currency">EGP</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── 12. ADDITIONS ── -->
+      <div class="ss-section" data-index="11" data-name="Additions">
+        <div class="ss-card-sticky">
+          <div class="ss-card">
+            <div class="ss-card-bg" style="--ss-img: url('/assets/images/gallery/additions.png')"></div>
+            <div class="ss-card-overlay"></div>
+            <div class="ss-card-num">12</div>
+            <div class="ss-card-footer">
+              <div>
+                <div class="ss-card-en">Additions</div>
+                <div class="ss-card-ar" dir="rtl" lang="ar">اضافات</div>
+              </div>
+              <div class="ss-card-emoji">✨</div>
+            </div>
+          </div>
+        </div>
+        <div class="ss-items">
+          <div class="menu-grid">
+            <div class="menu-item">
+              <div class="item-emoji">🥛</div>
+              <div class="item-info">
+                <h3 class="item-name">Milk <span dir="rtl" lang="ar">لبن</span></h3>
+              </div>
+              <div class="item-price">10 <span class="currency">EGP</span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-emoji">🧴</div>
+              <div class="item-info">
+                <h3 class="item-name">Flavor <span dir="rtl" lang="ar">فليفر</span></h3>
+              </div>
+              <div class="item-price">10 <span class="currency">EGP</span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-emoji">🥜</div>
+              <div class="item-info">
+                <h3 class="item-name">Nuts <span dir="rtl" lang="ar">مكسرات</span></h3>
+              </div>
+              <div class="item-price">15 <span class="currency">EGP</span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-emoji">🍡</div>
+              <div class="item-info">
+                <h3 class="item-name">Toppings <span dir="rtl" lang="ar">توبينج</span></h3>
+              </div>
+              <div class="item-price">10 <span class="currency">EGP</span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-emoji">🍫</div>
+              <div class="item-info">
+                <h3 class="item-name">Nutella <span dir="rtl" lang="ar">نوتيلا</span></h3>
+              </div>
+              <div class="item-price">10 <span class="currency">EGP</span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-emoji">🍦</div>
+              <div class="item-info">
+                <h3 class="item-name">Ice Cream <span dir="rtl" lang="ar">ايس كريم</span></h3>
+              </div>
+              <div class="item-price">15 <span class="currency">EGP</span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-emoji">🍯</div>
+              <div class="item-info">
+                <h3 class="item-name">Honey <span dir="rtl" lang="ar">عسل</span></h3>
+              </div>
+              <div class="item-price">10 <span class="currency">EGP</span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-emoji">🫖</div>
+              <div class="item-info">
+                <h3 class="item-name">Fatla <span dir="rtl" lang="ar">فتلة</span></h3>
+              </div>
+              <div class="item-price">5 <span class="currency">EGP</span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-emoji">🍓</div>
+              <div class="item-info">
+                <h3 class="item-name">Fruits <span dir="rtl" lang="ar">فاكهة</span></h3>
+              </div>
+              <div class="item-price">15 <span class="currency">EGP</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- end ss-menu-wrapper -->
+
     <div class="meander-border bottom-meander"></div>
   </section>
 
-  <!-- ===================== FOOTER ===================== -->
+  <!-- FOOTER -->
   <footer class="footer">
     <div class="container">
       <div class="footer-content">
         <div class="footer-logo">
-          <img src="Logo.png" alt="La Palma Café" class="footer-logo-img" />
+          <img src="assets/images/logo-footer.png" alt="La Palma Café" class="footer-logo-img" />
         </div>
         <p class="footer-text">© 2026 La Palma Café. All rights reserved.</p>
         <p class="footer-tagline">Crafted with ☕ and Mediterranean love</p>
@@ -861,91 +1095,101 @@
     </div>
   </footer>
 
-  <!-- Back to top button -->
+  <!-- Back to top -->
   <button class="back-to-top" id="backToTop" aria-label="Back to top">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
       <path d="M12 19V5M5 12l7-7 7 7" />
     </svg>
   </button>
 
-  <!-- Initialization for Circular Gallery -->
-  <script type="module">
-    import { CircularGalleryApp } from './circular-gallery.js';
+  <script src="script.js"></script>
 
-    window.addEventListener('error', (e) => {
-      const el = document.createElement('div');
-      el.style.cssText = 'position:fixed;top:0;left:0;z-index:9999;background:red;color:white;padding:20px;font-size:16px; width:100%;';
-      el.textContent = 'Error: ' + e.message + ' at ' + e.filename + ':' + e.lineno;
-      document.body.appendChild(el);
-    });
+  <script>
+    /* ── Scroll Stack Menu: category nav bar + scale animation ──────── */
+    (function () {
+      const sections = Array.from(document.querySelectorAll('.ss-section'));
+      const stickies = Array.from(document.querySelectorAll('.ss-card-sticky'));
+      const badge = document.getElementById('ssBadge');
+      const scrollContainer = document.getElementById('ssBadgeScroll');
+      const NAV_H = 74;
+      const tabs = [];
 
-    const init = () => {
-      try {
-        const container = document.getElementById('circular-gallery-container');
-        if (container) {
-          const categories = [
-            { text: 'hot drinks - مشروبات ساخنة', image: 'https://images.unsplash.com/photo-1541167760496-1628856ab772?q=80&w=800&auto=format&fit=crop' },
-            { text: 'cold drinks - مشروبات بارده', image: 'cold drinks.jpg' },
-            { text: 'milkshake - ميلك شيك', image: 'https://images.unsplash.com/photo-1572490122747-3968b75cc699?q=80&w=800&auto=format&fit=crop' },
-            { text: 'ice cream - ايس كريم', image: 'https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?q=80&w=800&auto=format&fit=crop' },
-            { text: 'soda drinks - مشروبات غازية', image: 'https://images.unsplash.com/photo-1622483767028-3f66f32aef97?q=80&w=800&auto=format&fit=crop' },
-            { text: 'fresh juice - عصائر فريش', image: 'https://images.unsplash.com/photo-1600271886742-f049cd451bba?q=80&w=800&auto=format&fit=crop' },
-            { text: 'cocktail - كوكتيل', image: 'cocktails.jpg' },
-            { text: 'smoothie - سموزي', image: 'https://images.unsplash.com/photo-1505252585461-04db1eb84625?q=80&w=800&auto=format&fit=crop' },
-            { text: 'bakery - مخبوزات', image: 'bakery.jpg' },
-            { text: 'desserts - حلويات', image: 'https://images.unsplash.com/photo-1551024601-bec78aea704b?q=80&w=800&auto=format&fit=crop' },
-            { text: 'Shisha - شيشة', image: 'shisha.jpg' },
-            { text: 'additions - اضافات', image: 'additions.png' }
-          ];
+      /* Build category name tabs */
+      sections.forEach((sec, i) => {
+        const tab = document.createElement('button');
+        tab.className = 'badge-tab';
+        tab.textContent = sec.dataset.name || 'Category ' + (i + 1);
+        tab.addEventListener('click', () => scrollToSection(i));
+        scrollContainer.appendChild(tab);
+        tabs.push(tab);
+      });
 
-          const headings = document.querySelectorAll('.category-heading');
-          const grids = document.querySelectorAll('.menu-grid');
-
-          // Hide all initially
-          headings.forEach(h => h.style.display = 'none');
-          grids.forEach(g => g.style.display = 'none');
-
-          new CircularGalleryApp(container, {
-            items: categories,
-            bend: 0.5,
-            textColor: '#1c3a42',
-            font: 'bold 46px Arial, sans-serif',
-            borderRadius: 0.05,
-            onChange: (index) => {
-              headings.forEach((h, i) => {
-                h.style.display = i === index ? 'flex' : 'none';
-              });
-              grids.forEach((g, i) => {
-                g.style.display = i === index ? 'grid' : 'none';
-                if (i === index) {
-                  // Ensure children replay animation with staggered delay
-                  Array.from(g.children).forEach((item, itemIdx) => {
-                    item.style.animation = 'none';
-                    void item.offsetWidth; // trigger reflow
-                    item.style.animation = null;
-                    item.style.animationDelay = `${itemIdx * 0.05}s`;
-                  });
-                }
-              });
-            }
-          });
-        }
-      } catch (e) {
-        const el = document.createElement('div');
-        el.style.cssText = 'position:fixed;top:60px;left:0;z-index:9999;background:orange;color:white;padding:20px;font-size:16px; width:100%;';
-        el.textContent = 'App init logic error: ' + e.message;
-        document.body.appendChild(el);
+      /* ── Scroll to a section by index ── */
+      function scrollToSection(index) {
+        const target = sections[Math.min(index, sections.length - 1)];
+        const top = target.getBoundingClientRect().top + window.scrollY - NAV_H - 8;
+        window.scrollTo({ top: top, behavior: 'smooth' });
       }
-    };
 
-    if (document.readyState === 'loading') {
-      document.addEventListener('DOMContentLoaded', init);
-    } else {
-      init();
-    }
+      function getActiveIndex() {
+        let active = 0;
+        const mid = window.scrollY + window.innerHeight * 0.38;
+        sections.forEach((s, i) => {
+          const top = s.getBoundingClientRect().top + window.scrollY;
+          if (top <= mid) active = i;
+        });
+        return active;
+      }
+
+      let lastActive = -1;
+
+      function update() {
+        const active = getActiveIndex();
+        const menuEl = document.getElementById('menu');
+        const mRect = menuEl.getBoundingClientRect();
+        const inMenu = mRect.top < window.innerHeight * 0.8 && mRect.bottom > 100;
+
+        /* Badge visibility */
+        badge.classList.toggle('visible', inMenu);
+
+        /* Highlight active tab + auto-scroll it into view */
+        if (active !== lastActive) {
+          tabs.forEach((t, i) => t.classList.toggle('active', i === active));
+          /* Smooth-scroll the tab bar so active tab is centered */
+          const activeTab = tabs[active];
+          if (activeTab) {
+            const containerW = scrollContainer.offsetWidth;
+            const tabLeft = activeTab.offsetLeft;
+            const tabW = activeTab.offsetWidth;
+            scrollContainer.scrollTo({
+              left: tabLeft - containerW / 2 + tabW / 2,
+              behavior: 'smooth'
+            });
+          }
+          lastActive = active;
+        }
+
+        /* Card scale — active = full, previous = slightly scaled */
+        stickies.forEach((sticky, i) => {
+          const depth = active - i;
+          if (depth > 0) {
+            const s = Math.max(0.82, 1 - depth * 0.045);
+            sticky.style.transform = 'scale(' + s + ')';
+            sticky.style.opacity = Math.max(0.25, 1 - depth * 0.25);
+            sticky.classList.add('is-stacked');
+          } else {
+            sticky.style.transform = 'scale(1)';
+            sticky.style.opacity = '1';
+            sticky.classList.remove('is-stacked');
+          }
+        });
+      }
+
+      window.addEventListener('scroll', update, { passive: true });
+      update();
+    })();
   </script>
 
-  <script src="script.js"></script>
 </body>
 
 </html>
