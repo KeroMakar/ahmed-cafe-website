@@ -23,7 +23,7 @@
 
   /* ---------- HAMBURGER / MOBILE MENU ---------- */
   const hamburger = document.getElementById('hamburger');
-  const navLinks  = document.getElementById('navLinks');
+  const navLinks = document.getElementById('navLinks');
 
   hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('open');
@@ -40,7 +40,7 @@
 
 
   /* ---------- ACTIVE NAV LINK ON SCROLL ---------- */
-  const sections   = ['hero', 'menu', 'about', 'contact'];
+  const sections = ['hero', 'menu', 'about', 'contact'];
   const navAnchorMap = {};
   sections.forEach(id => {
     const el = document.getElementById(id);
@@ -63,42 +63,7 @@
   updateActiveNav();
 
 
-  /* ---------- MENU FILTER TABS ---------- */
-  const tabs      = document.querySelectorAll('.tab-btn');
-  const menuItems = document.querySelectorAll('.menu-item');
 
-  const filterMenu = (cat) => {
-    menuItems.forEach((item, i) => {
-      const itemCat = item.getAttribute('data-cat');
-      const show = (cat === 'all' || itemCat === cat);
-
-      if (show) {
-        item.classList.remove('hidden');
-        // Staggered fade-in animation
-        item.style.animationDelay = `${i * 0.04}s`;
-        item.classList.remove('entering');
-        // Force reflow then re-add class
-        void item.offsetWidth;
-        item.classList.add('entering');
-      } else {
-        item.classList.add('hidden');
-        item.classList.remove('entering');
-      }
-    });
-  };
-
-  tabs.forEach(tab => {
-    tab.addEventListener('click', () => {
-      // Update active tab
-      tabs.forEach(t => t.classList.remove('active'));
-      tab.classList.add('active');
-      // Filter items
-      filterMenu(tab.getAttribute('data-cat'));
-    });
-  });
-
-  // Initialize — show all
-  filterMenu('all');
 
 
   /* ---------- BACK TO TOP BUTTON ---------- */
@@ -157,6 +122,123 @@
         window.scrollTo({ top, behavior: 'smooth' });
       }
     });
+  });
+
+  /* ---------- HERO IMAGE SEQUENCE SCROLL ---------- */
+  const canvas = document.getElementById('hero-canvas');
+  if (canvas) {
+    const context = canvas.getContext('2d');
+    const heroSection = document.getElementById('hero');
+
+    const frameCount = 80;
+    const currentFrame = index => (
+      `images/hero-sequence/Smoothly_transition_between_1080p_20260222192_${index.toString().padStart(3, '0')}.jpg`
+    );
+
+    const images = [];
+    const sequence = { frame: 0 };
+    let requestRef;
+
+    // Preload images
+    for (let i = 0; i < frameCount; i++) {
+      const img = new Image();
+      img.src = currentFrame(i);
+      images.push(img);
+    }
+
+    const render = () => {
+      const img = images[sequence.frame];
+      if (img && img.complete) {
+        const canvasWidth = canvas.width;
+        const canvasHeight = canvas.height;
+        const imageWidth = img.width;
+        const imageHeight = img.height;
+
+        const ratio = Math.max(canvasWidth / imageWidth, canvasHeight / imageHeight);
+        const newWidth = imageWidth * ratio;
+        const newHeight = imageHeight * ratio;
+        const x = (canvasWidth - newWidth) / 2;
+        const y = (canvasHeight - newHeight) / 2;
+
+        context.clearRect(0, 0, canvasWidth, canvasHeight);
+        context.drawImage(img, x, y, newWidth, newHeight);
+      }
+    };
+
+    const updateFrame = () => {
+      const wrapper = document.getElementById('hero-scroll-wrapper');
+      if (!wrapper) return;
+
+      const rect = wrapper.getBoundingClientRect();
+      // Animation completes when we've scrolled the full extra scroll height
+      const maxScroll = wrapper.offsetHeight - window.innerHeight;
+
+      let scrollY = -rect.top;
+      if (scrollY < 0) scrollY = 0;
+      if (scrollY > maxScroll) scrollY = maxScroll;
+
+      const scrollFraction = maxScroll > 0 ? scrollY / maxScroll : 0;
+      const frameIndex = Math.floor(scrollFraction * (frameCount - 1));
+
+      if (sequence.frame !== frameIndex) {
+        sequence.frame = frameIndex;
+        if (requestRef) cancelAnimationFrame(requestRef);
+        requestRef = requestAnimationFrame(render);
+      }
+    };
+
+    const resizeCanvas = () => {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+      render();
+    };
+
+    window.addEventListener('scroll', updateFrame, { passive: true });
+    window.addEventListener('resize', resizeCanvas);
+
+    // Trigger initial render
+    images[0].onload = () => {
+      resizeCanvas();
+      updateFrame();
+    };
+
+    // Fallback for mobile/fast loads
+    // Fallback for mobile/fast loads
+    setTimeout(() => {
+      resizeCanvas();
+      updateFrame();
+    }, 500);
+  }
+
+  /* ---------- BACKGROUND MUSIC ---------- */
+  const audio = new Audio('project/public/soundsvisual-sea-gently-lapping-waves-far-away-seagulls-486892.mp3');
+  audio.loop = true;
+  audio.volume = 0.2; // Calm and relaxing volume (Note: iOS overrides this script volume)
+
+  let isAudioPlaying = false;
+  const interactionEvents = ['click', 'touchstart', 'touchend', 'pointerdown', 'keydown', 'scroll'];
+
+  const startAudio = () => {
+    if (isAudioPlaying) return;
+
+    // Attempt to play synchronously with the user action
+    const playPromise = audio.play();
+
+    if (playPromise !== undefined) {
+      playPromise.then(() => {
+        isAudioPlaying = true;
+        // Clean up listeners globally
+        interactionEvents.forEach(evt => window.removeEventListener(evt, startAudio, { capture: true }));
+      }).catch(err => {
+        // Playback prevented, typically because the user hasn't explicitly interacted yet
+        console.log('Mobile/Safari blocked play – waiting for stricter interaction...', err);
+      });
+    }
+  };
+
+  // Bind broadly to window events to ensure catching mobile taps anywhere on the screen
+  interactionEvents.forEach(evt => {
+    window.addEventListener(evt, startAudio, { capture: true, passive: true });
   });
 
 })();

@@ -20,13 +20,12 @@
   <!-- ===================== NAVBAR ===================== -->
   <header class="navbar" id="navbar">
     <div class="nav-container">
-      <a href="#hero" class="nav-logo">
-        <img src="Logo.png" alt="La Palma Café Logo" class="logo-img" />
+      <a href="index.html" class="nav-logo">
+        <img src="new logo.png" alt="La Palma Café Logo" class="logo-img" />
       </a>
       <nav class="nav-links" id="navLinks">
         <a href="#hero" class="nav-link active" data-section="hero">Home</a>
-        <a href="#menu" class="nav-link" data-section="menu">Menu</a>
-        <a href="#about" class="nav-link" data-section="about">About</a>
+        <a href="menu.html" class="nav-link" data-section="menu">Menu</a>
         <a href="#contact" class="nav-link" data-section="contact">Contact</a>
       </nav>
       <button class="hamburger" id="hamburger" aria-label="Toggle menu">
@@ -36,639 +35,54 @@
   </header>
 
   <!-- ===================== HERO ===================== -->
-  <section class="hero" id="hero">
-    <div class="hero-bg">
-      <div class="hero-waves"></div>
-      <!-- Greek architectural SVG decoration -->
-      <svg class="hero-greek-deco" viewBox="0 0 1440 200" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-        <path d="M0,160 Q360,60 720,140 Q1080,220 1440,100 L1440,200 L0,200 Z" fill="rgba(42,143,163,0.15)" />
-        <path d="M0,180 Q360,100 720,160 Q1080,220 1440,130 L1440,200 L0,200 Z" fill="rgba(42,143,163,0.10)" />
-      </svg>
-    </div>
-
-    <!-- Floating greek ornament top -->
-    <div class="greek-top-ornament">
-      <svg viewBox="0 0 400 30" xmlns="http://www.w3.org/2000/svg">
-        <line x1="0" y1="15" x2="120" y2="15" stroke="#2a8fa3" stroke-width="1.5" opacity="0.5" />
-        <path d="M120,5 L135,5 L135,25 L150,25 L150,5 L165,5 L165,25 L180,25 L180,5 L195,5" stroke="#2a8fa3"
-          stroke-width="1.5" fill="none" opacity="0.6" />
-        <path d="M205,15 m-8,0 a8,8 0 1,0 16,0 a8,8 0 1,0 -16,0" stroke="#e8a84b" stroke-width="1.5" fill="none"
-          opacity="0.7" />
-        <path d="M215,5 L230,5 L230,25 L245,25 L245,5 L260,5 L260,25 L275,25 L275,5 L290,5" stroke="#2a8fa3"
-          stroke-width="1.5" fill="none" opacity="0.6" />
-        <line x1="290" y1="15" x2="400" y2="15" stroke="#2a8fa3" stroke-width="1.5" opacity="0.5" />
-      </svg>
-    </div>
-
-    <div class="hero-content">
-      <div class="hero-text">
-        <p class="hero-subtitle">Welcome to</p>
-        <h1 class="hero-title">La Palma <span class="accent">Café</span></h1>
-        <p class="hero-tagline">A taste of the Mediterranean, one sip at a time</p>
-        <a href="#menu" class="hero-btn" id="viewMenuBtn">
-          <span>Explore Our Menu</span>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-            stroke-width="2">
-            <path d="M5 12h14M12 5l7 7-7 7" />
-          </svg>
-        </a>
-      </div>
-      <div class="hero-visual">
-        <div class="hero-card-stack">
-          <div class="float-card fc1">
-            <div class="fc-icon">☕</div>
-            <div class="fc-text"><strong>Specialty Coffee</strong><span>Crafted with care</span></div>
-          </div>
-          <div class="float-card fc2">
-            <div class="fc-icon">🥐</div>
-            <div class="fc-text"><strong>Fresh Pastries</strong><span>Baked daily</span></div>
-          </div>
-          <div class="float-card fc3">
-            <div class="fc-icon">🍹</div>
-            <div class="fc-text"><strong>Fresh Juices</strong><span>Pure &amp; natural</span></div>
-          </div>
-        </div>
-        <!-- Santorini SVG illustration -->
-        <div class="santorini-illustration">
-          <svg viewBox="0 0 320 260" xmlns="http://www.w3.org/2000/svg">
-            <!-- Sky gradient -->
-            <defs>
-              <linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0%" stop-color="#b3e5fc" />
-                <stop offset="100%" stop-color="#e1f5fe" />
-              </linearGradient>
-              <linearGradient id="seaGrad" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0%" stop-color="#2a8fa3" />
-                <stop offset="100%" stop-color="#1a6b7a" />
-              </linearGradient>
-              <linearGradient id="sunGrad" x1="0" y1="0" x2="1" y2="1">
-                <stop offset="0%" stop-color="#e8a84b" />
-                <stop offset="100%" stop-color="#f0c07a" />
-              </linearGradient>
-            </defs>
-            <!-- Sky -->
-            <rect width="320" height="180" fill="url(#skyGrad)" />
-            <!-- Sun -->
-            <circle cx="240" cy="60" r="35" fill="url(#sunGrad)" opacity="0.9" />
-            <circle cx="240" cy="60" r="28" fill="#e8a84b" opacity="0.8" />
-            <!-- Cloud -->
-            <ellipse cx="80" cy="50" rx="30" ry="14" fill="white" opacity="0.8" />
-            <ellipse cx="100" cy="45" rx="22" ry="12" fill="white" opacity="0.9" />
-            <!-- White buildings Santorini style -->
-            <rect x="10" y="100" width="80" height="80" fill="white" rx="4" />
-            <rect x="30" y="80" width="50" height="50" fill="#f5f0dc" rx="4" />
-            <!-- Blue dome -->
-            <ellipse cx="55" cy="80" rx="25" ry="12" fill="#2a8fa3" />
-            <path d="M32,80 Q55,55 78,80" fill="#2a8fa3" />
-            <!-- Windows -->
-            <rect x="18" y="115" width="14" height="18" fill="#2a8fa3" rx="7" opacity="0.8" />
-            <rect x="45" y="115" width="14" height="18" fill="#2a8fa3" rx="7" opacity="0.8" />
-            <rect x="40" y="92" width="12" height="16" fill="#2a8fa3" rx="6" opacity="0.8" />
-            <!-- Second building -->
-            <rect x="180" y="95" width="60" height="85" fill="white" rx="4" />
-            <rect x="195" y="75" width="40" height="50" fill="#f5f0dc" rx="4" />
-            <ellipse cx="215" cy="75" rx="20" ry="9" fill="#2a8fa3" />
-            <path d="M197,75 Q215,58 233,75" fill="#2a8fa3" />
-            <rect x="188" y="115" width="12" height="16" fill="#2a8fa3" rx="6" opacity="0.8" />
-            <rect x="210" y="115" width="12" height="16" fill="#2a8fa3" rx="6" opacity="0.8" />
-            <!-- Third building -->
-            <rect x="250" y="110" width="60" height="70" fill="white" rx="4" />
-            <rect x="260" y="95" width="35" height="45" fill="#f5f0dc" rx="4" />
-            <!-- Palm tree left -->
-            <rect x="140" y="130" width="6" height="70" fill="#8b6914" rx="3" />
-            <ellipse cx="143" cy="128" rx="18" ry="12" fill="#2d8a3e" transform="rotate(-15,143,128)" />
-            <ellipse cx="143" cy="128" rx="22" ry="8" fill="#34a84a" transform="rotate(10,143,128)" />
-            <ellipse cx="143" cy="128" rx="15" ry="9" fill="#2d8a3e" transform="rotate(-35,143,128)" />
-            <!-- Sea -->
-            <rect x="0" y="180" width="320" height="80" fill="url(#seaGrad)" />
-            <!-- Waves -->
-            <path d="M0,185 Q40,178 80,185 Q120,192 160,185 Q200,178 240,185 Q280,192 320,185"
-              stroke="rgba(255,255,255,0.4)" stroke-width="1.5" fill="none" />
-            <path d="M0,195 Q40,188 80,195 Q120,202 160,195 Q200,188 240,195 Q280,202 320,195"
-              stroke="rgba(255,255,255,0.3)" stroke-width="1.5" fill="none" />
-            <!-- Ground/path -->
-            <path d="M0,178 Q160,168 320,178 L320,185 L0,185 Z" fill="#e8d5a3" />
-          </svg>
-        </div>
-      </div>
-    </div>
-
-    <!-- Scroll indicator -->
-    <div class="scroll-indicator">
-      <div class="scroll-dot"></div>
-    </div>
-  </section>
-
-  <!-- ===================== MENU SECTION ===================== -->
-  <section class="menu-section" id="menu">
-    <!-- Greek meander border top -->
-    <div class="meander-border top-meander"></div>
-
-    <div class="container">
-      <div class="section-header">
-        <p class="section-subtitle">What we offer</p>
-        <h2 class="section-title">Our <span class="accent">Menu</span></h2>
-        <div class="title-ornament">
-          <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
-            <line x1="0" y1="10" x2="60" y2="10" stroke="#2a8fa3" stroke-width="1.5" opacity="0.4" />
-            <circle cx="70" cy="10" r="4" fill="#e8a84b" opacity="0.7" />
-            <circle cx="83" cy="10" r="6" fill="#2a8fa3" opacity="0.8" />
-            <circle cx="96" cy="10" r="4" fill="#e8a84b" opacity="0.7" />
-            <line x1="106" y1="10" x2="200" y2="10" stroke="#2a8fa3" stroke-width="1.5" opacity="0.4" />
-          </svg>
-        </div>
+  <div class="hero-scroll-wrapper" id="hero-scroll-wrapper">
+    <section class="hero" id="hero">
+      <!-- ── Hero Canvas Background ── -->
+      <div class="hero-canvas-container">
+        <canvas id="hero-canvas"></canvas>
       </div>
 
-      <!-- Category Filter Tabs -->
-      <div class="category-tabs" id="categoryTabs">
-        <button class="tab-btn active" data-cat="all" id="tab-all">All Items</button>
-        <button class="tab-btn" data-cat="hot-coffee" id="tab-hot-coffee">☕ Hot Coffee</button>
-        <button class="tab-btn" data-cat="cold-coffee" id="tab-cold-coffee">🧊 Cold Coffee</button>
-        <button class="tab-btn" data-cat="juices" id="tab-juices">🍹 Juices</button>
-        <button class="tab-btn" data-cat="smoothies" id="tab-smoothies">🥤 Smoothies</button>
-        <button class="tab-btn" data-cat="hot-drinks" id="tab-hot-drinks">🫖 Hot Drinks</button>
-        <button class="tab-btn" data-cat="pastries" id="tab-pastries">🥐 Pastries</button>
-        <button class="tab-btn" data-cat="sandwiches" id="tab-sandwiches">🥪 Sandwiches</button>
+      <!-- Floating greek ornament top -->
+      <div class="greek-top-ornament">
+        <svg viewBox="0 0 400 30" xmlns="http://www.w3.org/2000/svg">
+          <line x1="0" y1="15" x2="120" y2="15" stroke="#2a8fa3" stroke-width="1.5" opacity="0.5" />
+          <path d="M120,5 L135,5 L135,25 L150,25 L150,5 L165,5 L165,25 L180,25 L180,5 L195,5" stroke="#2a8fa3"
+            stroke-width="1.5" fill="none" opacity="0.6" />
+          <path d="M205,15 m-8,0 a8,8 0 1,0 16,0 a8,8 0 1,0 -16,0" stroke="#e8a84b" stroke-width="1.5" fill="none"
+            opacity="0.7" />
+          <path d="M215,5 L230,5 L230,25 L245,25 L245,5 L260,5 L260,25 L275,25 L275,5 L290,5" stroke="#2a8fa3"
+            stroke-width="1.5" fill="none" opacity="0.6" />
+          <line x1="290" y1="15" x2="400" y2="15" stroke="#2a8fa3" stroke-width="1.5" opacity="0.5" />
+        </svg>
       </div>
 
-      <!-- Menu Grid -->
-      <div class="menu-grid" id="menuGrid">
-
-        <!-- HOT COFFEE -->
-        <div class="menu-item" data-cat="hot-coffee">
-          <div class="item-emoji">☕</div>
-          <div class="item-info">
-            <h3 class="item-name">Espresso</h3>
-            <p class="item-desc">Rich and bold single shot of pure espresso</p>
+      <div class="hero-content">
+        <div class="hero-text"
+          style="display: flex; flex-direction: column; align-items: center; justify-content: center; width: 100%; text-align: center;">
+          <!-- Center Logo above button -->
+          <div style="margin-bottom: 25px;">
+            <img src="new logo.png" alt="La Palma Café Logo Center"
+              style="max-width: 15rem; margin: 0 auto; display: block;">
           </div>
-          <div class="item-price">25 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item" data-cat="hot-coffee">
-          <div class="item-emoji">☕</div>
-          <div class="item-info">
-            <h3 class="item-name">Double Espresso</h3>
-            <p class="item-desc">Two shots for the true coffee lover</p>
-          </div>
-          <div class="item-price">35 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item" data-cat="hot-coffee">
-          <div class="item-emoji">☕</div>
-          <div class="item-info">
-            <h3 class="item-name">Cappuccino</h3>
-            <p class="item-desc">Espresso with steamed milk and a thick foam top</p>
-          </div>
-          <div class="item-price">55 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item" data-cat="hot-coffee">
-          <div class="item-emoji">☕</div>
-          <div class="item-info">
-            <h3 class="item-name">Latte</h3>
-            <p class="item-desc">Smooth espresso with creamy steamed milk</p>
-          </div>
-          <div class="item-price">60 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item" data-cat="hot-coffee">
-          <div class="item-emoji">☕</div>
-          <div class="item-info">
-            <h3 class="item-name">Flat White</h3>
-            <p class="item-desc">Velvety microfoam espresso with less foam</p>
-          </div>
-          <div class="item-price">60 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item" data-cat="hot-coffee">
-          <div class="item-emoji">☕</div>
-          <div class="item-info">
-            <h3 class="item-name">Americano</h3>
-            <p class="item-desc">Espresso diluted with hot water — clean and strong</p>
-          </div>
-          <div class="item-price">45 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item" data-cat="hot-coffee">
-          <div class="item-emoji">☕</div>
-          <div class="item-info">
-            <h3 class="item-name">Mocha</h3>
-            <p class="item-desc">Espresso, chocolate sauce, and steamed milk</p>
-          </div>
-          <div class="item-price">65 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item" data-cat="hot-coffee">
-          <div class="item-emoji">☕</div>
-          <div class="item-info">
-            <h3 class="item-name">Turkish Coffee</h3>
-            <p class="item-desc">Traditional finely ground coffee, served strong</p>
-          </div>
-          <div class="item-price">30 <span class="currency">EGP</span></div>
-        </div>
-
-        <!-- COLD COFFEE -->
-        <div class="menu-item" data-cat="cold-coffee">
-          <div class="item-emoji">🧊</div>
-          <div class="item-info">
-            <h3 class="item-name">Iced Latte</h3>
-            <p class="item-desc">Espresso over ice with cold milk</p>
-          </div>
-          <div class="item-price">65 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item" data-cat="cold-coffee">
-          <div class="item-emoji">🧊</div>
-          <div class="item-info">
-            <h3 class="item-name">Iced Americano</h3>
-            <p class="item-desc">Bold espresso over ice — refreshing and strong</p>
-          </div>
-          <div class="item-price">55 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item" data-cat="cold-coffee">
-          <div class="item-emoji">🧊</div>
-          <div class="item-info">
-            <h3 class="item-name">Cold Brew</h3>
-            <p class="item-desc">Slow-steeped for 12 hours, smooth and rich</p>
-          </div>
-          <div class="item-price">70 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item" data-cat="cold-coffee">
-          <div class="item-emoji">🧊</div>
-          <div class="item-info">
-            <h3 class="item-name">Frappe</h3>
-            <p class="item-desc">Blended iced coffee — creamy and refreshing</p>
-          </div>
-          <div class="item-price">70 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item" data-cat="cold-coffee">
-          <div class="item-emoji">🧊</div>
-          <div class="item-info">
-            <h3 class="item-name">Iced Mocha</h3>
-            <p class="item-desc">Chocolate, espresso and milk over ice</p>
-          </div>
-          <div class="item-price">75 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item" data-cat="cold-coffee">
-          <div class="item-emoji">🧊</div>
-          <div class="item-info">
-            <h3 class="item-name">Caramel Macchiato</h3>
-            <p class="item-desc">Vanilla milk, espresso and caramel drizzle over ice</p>
-          </div>
-          <div class="item-price">75 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item featured" data-cat="cold-coffee">
-          <div class="featured-badge">⭐ Popular</div>
-          <div class="item-emoji">🧊</div>
-          <div class="item-info">
-            <h3 class="item-name">La Palma Special</h3>
-            <p class="item-desc">Our signature blend with vanilla, hazelnut &amp; cold foam</p>
-          </div>
-          <div class="item-price">85 <span class="currency">EGP</span></div>
-        </div>
-
-        <!-- JUICES -->
-        <div class="menu-item" data-cat="juices">
-          <div class="item-emoji">🍊</div>
-          <div class="item-info">
-            <h3 class="item-name">Fresh Orange Juice</h3>
-            <p class="item-desc">Freshly squeezed, pure and vibrant</p>
-          </div>
-          <div class="item-price">45 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item" data-cat="juices">
-          <div class="item-emoji">🍋</div>
-          <div class="item-info">
-            <h3 class="item-name">Lemonade</h3>
-            <p class="item-desc">Classic freshly squeezed lemonade with mint</p>
-          </div>
-          <div class="item-price">40 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item" data-cat="juices">
-          <div class="item-emoji">🍉</div>
-          <div class="item-info">
-            <h3 class="item-name">Watermelon Juice</h3>
-            <p class="item-desc">Sweet and hydrating summer classic</p>
-          </div>
-          <div class="item-price">40 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item" data-cat="juices">
-          <div class="item-emoji">🥭</div>
-          <div class="item-info">
-            <h3 class="item-name">Mango Juice</h3>
-            <p class="item-desc">Tropical and lusciously thick</p>
-          </div>
-          <div class="item-price">50 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item" data-cat="juices">
-          <div class="item-emoji">🍎</div>
-          <div class="item-info">
-            <h3 class="item-name">Mixed Fruit Juice</h3>
-            <p class="item-desc">A refreshing blend of seasonal fruits</p>
-          </div>
-          <div class="item-price">55 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item" data-cat="juices">
-          <div class="item-emoji">🍃</div>
-          <div class="item-info">
-            <h3 class="item-name">Mint Lemonade</h3>
-            <p class="item-desc">Fresh mint and lemon — ultra refreshing</p>
-          </div>
-          <div class="item-price">45 <span class="currency">EGP</span></div>
-        </div>
-
-        <!-- SMOOTHIES -->
-        <div class="menu-item" data-cat="smoothies">
-          <div class="item-emoji">🍓</div>
-          <div class="item-info">
-            <h3 class="item-name">Strawberry Smoothie</h3>
-            <p class="item-desc">Blended strawberries with milk and honey</p>
-          </div>
-          <div class="item-price">65 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item" data-cat="smoothies">
-          <div class="item-emoji">🫐</div>
-          <div class="item-info">
-            <h3 class="item-name">Berry Blast</h3>
-            <p class="item-desc">Mixed berries blended with yogurt</p>
-          </div>
-          <div class="item-price">70 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item" data-cat="smoothies">
-          <div class="item-emoji">🍌</div>
-          <div class="item-info">
-            <h3 class="item-name">Banana Peanut Butter</h3>
-            <p class="item-desc">Rich banana with creamy peanut butter</p>
-          </div>
-          <div class="item-price">70 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item" data-cat="smoothies">
-          <div class="item-emoji">🥭</div>
-          <div class="item-info">
-            <h3 class="item-name">Tropical Mango Smoothie</h3>
-            <p class="item-desc">Mango, pineapple, and coconut milk</p>
-          </div>
-          <div class="item-price">70 <span class="currency">EGP</span></div>
-        </div>
-
-        <!-- HOT DRINKS -->
-        <div class="menu-item" data-cat="hot-drinks">
-          <div class="item-emoji">🫖</div>
-          <div class="item-info">
-            <h3 class="item-name">Green Tea</h3>
-            <p class="item-desc">Delicate and antioxidant-rich loose leaf green tea</p>
-          </div>
-          <div class="item-price">30 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item" data-cat="hot-drinks">
-          <div class="item-emoji">🫖</div>
-          <div class="item-info">
-            <h3 class="item-name">Earl Grey Tea</h3>
-            <p class="item-desc">Classic black tea with bergamot aroma</p>
-          </div>
-          <div class="item-price">30 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item" data-cat="hot-drinks">
-          <div class="item-emoji">🫖</div>
-          <div class="item-info">
-            <h3 class="item-name">Moroccan Mint Tea</h3>
-            <p class="item-desc">Strong sweet tea with fresh mint leaves</p>
-          </div>
-          <div class="item-price">35 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item" data-cat="hot-drinks">
-          <div class="item-emoji">🍵</div>
-          <div class="item-info">
-            <h3 class="item-name">Hot Chocolate</h3>
-            <p class="item-desc">Rich Belgian chocolate with steamed milk</p>
-          </div>
-          <div class="item-price">55 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item" data-cat="hot-drinks">
-          <div class="item-emoji">🫖</div>
-          <div class="item-info">
-            <h3 class="item-name">Chamomile Tea</h3>
-            <p class="item-desc">Soothing floral chamomile blend</p>
-          </div>
-          <div class="item-price">30 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item" data-cat="hot-drinks">
-          <div class="item-emoji">🌿</div>
-          <div class="item-info">
-            <h3 class="item-name">Matcha Latte</h3>
-            <p class="item-desc">Japanese matcha with steamed oat milk</p>
-          </div>
-          <div class="item-price">65 <span class="currency">EGP</span></div>
-        </div>
-
-        <!-- PASTRIES -->
-        <div class="menu-item" data-cat="pastries">
-          <div class="item-emoji">🥐</div>
-          <div class="item-info">
-            <h3 class="item-name">Butter Croissant</h3>
-            <p class="item-desc">Flaky, golden and freshly baked</p>
-          </div>
-          <div class="item-price">35 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item" data-cat="pastries">
-          <div class="item-emoji">🫓</div>
-          <div class="item-info">
-            <h3 class="item-name">Cheese Croissant</h3>
-            <p class="item-desc">Buttery croissant filled with melted cheese</p>
-          </div>
-          <div class="item-price">45 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item" data-cat="pastries">
-          <div class="item-emoji">🧁</div>
-          <div class="item-info">
-            <h3 class="item-name">Chocolate Muffin</h3>
-            <p class="item-desc">Rich double chocolate with moist crumb</p>
-          </div>
-          <div class="item-price">40 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item" data-cat="pastries">
-          <div class="item-emoji">🍰</div>
-          <div class="item-info">
-            <h3 class="item-name">Cheesecake Slice</h3>
-            <p class="item-desc">Classic New York style with berry compote</p>
-          </div>
-          <div class="item-price">75 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item featured" data-cat="pastries">
-          <div class="featured-badge">⭐ Chef's Pick</div>
-          <div class="item-emoji">🍮</div>
-          <div class="item-info">
-            <h3 class="item-name">Greek Baklava</h3>
-            <p class="item-desc">Honey-soaked layers of phyllo with pistachios</p>
-          </div>
-          <div class="item-price">55 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item" data-cat="pastries">
-          <div class="item-emoji">🍩</div>
-          <div class="item-info">
-            <h3 class="item-name">Cinnamon Roll</h3>
-            <p class="item-desc">Soft roll with cinnamon sugar and cream glaze</p>
-          </div>
-          <div class="item-price">45 <span class="currency">EGP</span></div>
-        </div>
-
-        <!-- SANDWICHES -->
-        <div class="menu-item" data-cat="sandwiches">
-          <div class="item-emoji">🥪</div>
-          <div class="item-info">
-            <h3 class="item-name">Club Sandwich</h3>
-            <p class="item-desc">Turkey, cheese, lettuce, tomato, mayo on toasted bread</p>
-          </div>
-          <div class="item-price">85 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item" data-cat="sandwiches">
-          <div class="item-emoji">🥚</div>
-          <div class="item-info">
-            <h3 class="item-name">Egg &amp; Cheese Panini</h3>
-            <p class="item-desc">Toasted panini with scrambled egg and cheddar</p>
-          </div>
-          <div class="item-price">70 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item" data-cat="sandwiches">
-          <div class="item-emoji">🧀</div>
-          <div class="item-info">
-            <h3 class="item-name">Grilled Cheese</h3>
-            <p class="item-desc">Classic melted cheese on toasted sourdough</p>
-          </div>
-          <div class="item-price">60 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item" data-cat="sandwiches">
-          <div class="item-emoji">🥙</div>
-          <div class="item-info">
-            <h3 class="item-name">Mediterranean Wrap</h3>
-            <p class="item-desc">Feta, olives, tomatoes, cucumber, hummus in pita</p>
-          </div>
-          <div class="item-price">80 <span class="currency">EGP</span></div>
-        </div>
-        <div class="menu-item featured" data-cat="sandwiches">
-          <div class="featured-badge">⭐ Popular</div>
-          <div class="item-emoji">🥪</div>
-          <div class="item-info">
-            <h3 class="item-name">La Palma Breakfast Plate</h3>
-            <p class="item-desc">Eggs, cheese, olives, tomatoes, cream cheese &amp; toast</p>
-          </div>
-          <div class="item-price">120 <span class="currency">EGP</span></div>
-        </div>
-
-      </div><!-- end menu-grid -->
-    </div>
-
-    <!-- Greek meander border bottom -->
-    <div class="meander-border bottom-meander"></div>
-  </section>
-
-  <!-- ===================== ABOUT SECTION ===================== -->
-  <section class="about-section" id="about">
-    <div class="container">
-      <div class="about-grid">
-        <div class="about-visual">
-          <div class="about-img-wrapper">
-            <!-- Large Greek cafe illustration -->
-            <svg viewBox="0 0 340 380" xmlns="http://www.w3.org/2000/svg" class="about-svg">
-              <defs>
-                <linearGradient id="aboutSky" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="0%" stop-color="#b3e5fc" />
-                  <stop offset="100%" stop-color="#e8f4fd" />
-                </linearGradient>
-                <linearGradient id="aboutSea" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="0%" stop-color="#2a8fa3" />
-                  <stop offset="100%" stop-color="#1a6b7a" />
-                </linearGradient>
-              </defs>
-              <!-- Sky -->
-              <rect width="340" height="250" fill="url(#aboutSky)" />
-              <!-- Sun -->
-              <circle cx="280" cy="60" r="40" fill="#e8a84b" opacity="0.85" />
-              <circle cx="280" cy="60" r="32" fill="#f0c07a" />
-              <!-- Main cafe building -->
-              <rect x="60" y="120" width="220" height="160" fill="white" rx="6" />
-              <!-- Roof / facade top with Greek columns -->
-              <rect x="50" y="100" width="240" height="30" fill="#f5f0dc" rx="3" />
-              <!-- Meander pattern on roof -->
-              <rect x="50" y="96" width="240" height="6" fill="#2a8fa3" rx="2" />
-              <!-- Columns decoration -->
-              <rect x="75" y="100" width="10" height="160" fill="#f0e8c8" rx="2" />
-              <rect x="155" y="100" width="10" height="160" fill="#f0e8c8" rx="2" />
-              <rect x="255" y="100" width="10" height="160" fill="#f0e8c8" rx="2" />
-              <!-- Blue dome on top -->
-              <ellipse cx="170" cy="98" rx="42" ry="18" fill="#2a8fa3" />
-              <path d="M130,98 Q170,62 210,98" fill="#2a8fa3" />
-              <!-- Door -->
-              <rect x="145" y="190" width="50" height="90" fill="#2a8fa3" rx="4" />
-              <path d="M145,210 Q170,195 195,210" fill="#1a6b7a" />
-              <!-- Windows -->
-              <rect x="75" y="140" width="42" height="36" fill="#2a8fa3" rx="10" opacity="0.85" />
-              <rect x="222" y="140" width="42" height="36" fill="#2a8fa3" rx="10" opacity="0.85" />
-              <rect x="80" y="195" width="35" height="30" fill="#2a8fa3" rx="8" opacity="0.8" />
-              <rect x="225" y="195" width="35" height="30" fill="#2a8fa3" rx="8" opacity="0.8" />
-              <!-- Cafe sign -->
-              <rect x="105" y="128" width="130" height="30" fill="#e8a84b" rx="4" />
-              <text x="170" y="149" text-anchor="middle" fill="white" font-size="13" font-family="serif"
-                font-style="italic">La Palma Café</text>
-              <!-- Outdoor tables -->
-              <ellipse cx="85" cy="295" rx="20" ry="8" fill="#e8a84b" opacity="0.9" />
-              <rect x="83" y="295" width="4" height="30" fill="#c47a20" rx="2" />
-              <ellipse cx="258" cy="295" rx="20" ry="8" fill="#e8a84b" opacity="0.9" />
-              <rect x="256" y="295" width="4" height="30" fill="#c47a20" rx="2" />
-              <!-- Chairs -->
-              <rect x="65" y="302" width="15" height="20" fill="#f5f0dc" rx="3" />
-              <rect x="90" y="302" width="15" height="20" fill="#f5f0dc" rx="3" />
-              <rect x="238" y="302" width="15" height="20" fill="#f5f0dc" rx="3" />
-              <rect x="263" y="302" width="15" height="20" fill="#f5f0dc" rx="3" />
-              <!-- Palm trees -->
-              <rect x="22" y="200" width="7" height="100" fill="#8b6914" rx="3" />
-              <ellipse cx="25" cy="198" rx="20" ry="10" fill="#2d8a3e" transform="rotate(-20,25,198)" />
-              <ellipse cx="25" cy="198" rx="25" ry="8" fill="#34a84a" transform="rotate(15,25,198)" />
-              <rect x="310" y="195" width="7" height="105" fill="#8b6914" rx="3" />
-              <ellipse cx="313" cy="193" rx="20" ry="10" fill="#2d8a3e" transform="rotate(20,313,193)" />
-              <ellipse cx="313" cy="193" rx="25" ry="8" fill="#34a84a" transform="rotate(-15,313,193)" />
-              <!-- Ground -->
-              <rect x="0" y="278" width="340" height="102" fill="#e8d5a3" rx="0" />
-              <!-- Path/tiles -->
-              <rect x="0" y="278" width="340" height="8" fill="#d4c2a0" />
+          <a href="menu.html" class="hero-btn" id="viewMenuBtn">
+            <span>Explore Our Menu</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7" />
             </svg>
-            <div class="about-img-badge">
-              <span>Est. 2024</span>
-            </div>
-          </div>
+          </a>
         </div>
-        <div class="about-text">
-          <p class="section-subtitle">Our Story</p>
-          <h2 class="section-title">More Than <span class="accent">a Café</span></h2>
-          <p class="about-description">
-            Nestled at the crossroads of Mediterranean warmth and Egyptian hospitality, <strong>La Palma Café</strong>
-            was born from a passion for creating a space where every visit feels like a small escape. Our name draws
-            inspiration from the swaying palms and the sun-drenched shores of the Greek islands.
-          </p>
-          <p class="about-description">
-            From our carefully crafted specialty coffees to our freshly baked pastries and Mediterranean-inspired bites,
-            every item on our menu is prepared with love and the finest ingredients. We believe a great cup of coffee
-            can change the whole day.
-          </p>
-          <div class="about-features">
-            <div class="feature-item">
-              <div class="feature-icon">🫘</div>
-              <div>
-                <strong>Premium Beans</strong>
-                <span>Carefully sourced specialty coffee</span>
-              </div>
-            </div>
-            <div class="feature-item">
-              <div class="feature-icon">🌿</div>
-              <div>
-                <strong>Fresh Ingredients</strong>
-                <span>Daily prepared, never compromised</span>
-              </div>
-            </div>
-            <div class="feature-item">
-              <div class="feature-icon">🏛️</div>
-              <div>
-                <strong>Mediterranean Vibes</strong>
-                <span>A warm, welcoming atmosphere</span>
-              </div>
-            </div>
-          </div>
+        <div class="hero-visual">
+          <!-- Hero Canvas placed inside hero-scroll-wrapper -->
         </div>
       </div>
-    </div>
-  </section>
+
+      <!-- Scroll indicator -->
+      <div class="scroll-indicator">
+        <div class="scroll-dot"></div>
+      </div>
+    </section>
+  </div>
 
   <!-- ===================== CONTACT SECTION ===================== -->
   <section class="contact-section" id="contact">
@@ -679,26 +93,18 @@
         <h2 class="section-title">Visit <span class="accent">La Palma</span></h2>
       </div>
       <div class="contact-grid">
-        <div class="contact-card" id="contact-hours">
-          <div class="contact-icon">🕐</div>
-          <h3>Opening Hours</h3>
-          <ul class="hours-list">
-            <li><span>Monday – Thursday</span><span>8:00 AM – 11:00 PM</span></li>
-            <li><span>Friday – Saturday</span><span>8:00 AM – 12:00 AM</span></li>
-            <li><span>Sunday</span><span>9:00 AM – 10:00 PM</span></li>
-          </ul>
-        </div>
-        <div class="contact-card" id="contact-location">
-          <div class="contact-icon">📍</div>
-          <h3>Location</h3>
-          <p class="contact-detail">Cairo, Egypt</p>
-          <p class="contact-detail secondary">Come visit us — we'd love to see you</p>
-        </div>
         <div class="contact-card" id="contact-social">
-          <div class="contact-icon">📱</div>
+          <div class="contact-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="contact-svg">
+              <rect width="14" height="20" x="5" y="2" rx="2" ry="2" />
+              <path d="M12 18h.01" />
+            </svg>
+          </div>
           <h3>Follow Us</h3>
           <div class="social-links">
-            <a href="#" class="social-link" id="instagram-link">
+            <a href="https://www.instagram.com/la.palma.cafe/?utm_source=ig_web_button_share_sheet" class="social-link"
+              id="instagram-link" target="_blank" rel="noopener noreferrer">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                 stroke-width="2">
                 <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
@@ -707,12 +113,34 @@
               </svg>
               Instagram
             </a>
-            <a href="#" class="social-link" id="facebook-link">
+            <a href="https://www.facebook.com/profile.php?id=61580997005989" class="social-link" id="facebook-link"
+              target="_blank" rel="noopener noreferrer">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                 stroke-width="2">
                 <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
               </svg>
               Facebook
+            </a>
+          </div>
+        </div>
+        <div class="contact-card" id="contact-location">
+          <div class="contact-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="contact-svg">
+              <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+              <circle cx="12" cy="10" r="3" />
+            </svg>
+          </div>
+          <h3>Location</h3>
+          <p class="contact-detail">Cairo, Egypt</p>
+          <p class="contact-detail secondary">Come visit us — we'd love to see you</p>
+          <div class="location-actions">
+            <a href="#" class="social-link" id="directions-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="3 11 22 2 13 21 11 13 3 11" />
+              </svg>
+              Get Directions
             </a>
           </div>
         </div>
@@ -728,7 +156,7 @@
         <div class="footer-logo">
           <img src="Logo.png" alt="La Palma Café" class="footer-logo-img" />
         </div>
-        <p class="footer-text">© 2024 La Palma Café. All rights reserved.</p>
+        <p class="footer-text">© 2026 La Palma Café. All rights reserved.</p>
         <p class="footer-tagline">Crafted with ☕ and Mediterranean love</p>
       </div>
     </div>
